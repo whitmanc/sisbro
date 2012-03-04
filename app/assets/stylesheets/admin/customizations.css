@@ -1,0 +1,38 @@
+body {
+  background-color: #091526;
+}
+#header h1 a {
+  color: #BBB;
+}
+#footer {
+  display: none;
+}
+form div.right {
+  display: inline;
+  float: right;
+  width: 32%;
+}
+form div.left {
+  display: inline;
+  float: left;
+  width: 58%;
+}
+#content {
+  margin: 0em 1em 1em 1em;
+  padding: 1em;
+  background: white;
+  color: #111;
+  min-height: 670px;
+}
+#header h1 a {
+  display:none;
+}
+.preview-buttons {
+  display: none;
+}
+#header {
+  height: 56px;
+}
+#login-nav {
+  color
+}

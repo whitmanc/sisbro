@@ -1,0 +1,42 @@
+<% content_for :head do %>
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+      $("#amazon_scroller").amazon_scroller({
+        scroller_title_show: 'enable',
+        scroller_time_interval: '300000',
+        scroller_window_background_color: "#FFF",
+        scroller_window_padding: '10',
+        scroller_border_size: '0',
+        scroller_border_color: '#FFF',
+        scroller_title_size: '12',
+        scroller_title_color: 'black',
+        scroller_show_count: '1',
+        directory: 'images'
+      });
+
+    });
+  </script>
+<% end %>
+<% unless @product.relations.blank? %>
+<div id="related">
+  <h6 class="product-section-title">You May Also Like</h6>
+  <div id="amazon_scroller" class="amazon_scroller">
+    <div class="amazon_scroller_mask">
+      <ul>
+        <% @product.relations.each_with_index do |relation, index| %>
+          <% unless relation.related_to.images.blank? %>
+          <li class="carousel-item">
+            <%= link_to(image_tag(relation.related_to.images.first.attachment.url(:small),:class => "carousel", :alt => "#{relation.related_to.name}"), relation.related_to, :title => "#{relation.related_to.name}<br/><span>#{number_to_currency(relation.related_to.price)}</span>") %>
+          </li>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+    <ul class="amazon_scroller_nav">
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="clr"></div>
+  </div>
+</div>
+<% end %>

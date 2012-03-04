@@ -1,0 +1,7 @@
+<li id="home-link" data-hook><%= link_to t(:home), root_path %></li>
+<% if current_user && current_user.wishlists.present? %>
+  <li id="wishlist-link" data-hook><%= link_to 'Wishlist', current_user.wishlists.where("is_default = ?", true).first, :style => "font-size:12px" %></li>
+<% else %>
+  <li id="wishlist-link" data-hook><%= link_to 'Wishlist', account_path, :style => "font-size:12px" %></li>
+<% end %>
+<li id="link-to-cart" data-hook><%= link_to_cart %></li>

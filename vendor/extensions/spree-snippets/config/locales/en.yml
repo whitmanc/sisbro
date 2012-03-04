@@ -1,0 +1,8 @@
+---
+en:
+  snippets: "Content Snippets"
+  snippets_desc: "Manage snippets of content with with Rich Text editor."
+  snippets_slug: "Slug (identifier)"
+  snippets_content: "Content"
+  new_snippet: "New snippet"
+  editing_snippet: "Editing snippet"

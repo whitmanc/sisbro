@@ -1,0 +1,21 @@
+<div id="social-buttons">
+  <p class="email_to_friend">
+    <%= link_to t('email_to_friend.send_to_friend'), email_to_friend_url('product', @product) %>
+  </p>
+
+  <iframe src="//www.facebook.com/plugins/like.php?href=<%= escape product_url(@product) %>&amp;send=false&amp;layout=standard&amp;width=180&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:35px;" allowTransparency="true"></iframe>
+
+  <g:plusone size="medium" annotation="inline" width="180"></g:plusone>
+  
+  <br />
+
+  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+  
+  <br />
+  
+  <%= pin_it_button(@product) %>
+
+  <br /><br /><br />
+  
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
