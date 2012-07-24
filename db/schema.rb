@@ -13,6 +13,15 @@
 
 ActiveRecord::Schema.define(:version => 20120303142124) do
 
+  create_table "bucket_rates", :force => true do |t|
+    t.integer  "calculator_id"
+    t.decimal  "floor",         :precision => 8, :scale => 2
+    t.decimal  "ceiling",       :precision => 8, :scale => 2
+    t.decimal  "rate",          :precision => 8, :scale => 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
     t.datetime "expires_at"
@@ -84,12 +93,22 @@ ActiveRecord::Schema.define(:version => 20120303142124) do
   add_index "spree_assets", ["viewable_id"], :name => "index_assets_on_viewable_id"
   add_index "spree_assets", ["viewable_type", "type"], :name => "index_assets_on_viewable_type_and_type"
 
-  create_table "spree_calculators", :force => true do |t|
-    t.string   "type"
-    t.integer  "calculable_id",   :null => false
-    t.string   "calculable_type", :null => false
+  create_table "spree_bucket_rates", :force => true do |t|
+    t.integer  "spree_calculator_id"
+    t.decimal  "floor",               :precision => 8, :scale => 2
+    t.decimal  "ceiling",             :precision => 8, :scale => 2
+    t.decimal  "rate",                :precision => 8, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "spree_calculators", :force => true do |t|
+    t.string   "type"
+    t.integer  "calculable_id",                      :null => false
+    t.string   "calculable_type",                    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "advanced",        :default => false
   end
 
   create_table "spree_configurations", :force => true do |t|
