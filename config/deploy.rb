@@ -58,5 +58,3 @@ after 'deploy:start', 'foreman:start'
 
 before 'deploy:restart', 'foreman:export'
 after 'deploy:restart', 'foreman:restart'
-
-export rvm_trust_rvmrcs_flag=1

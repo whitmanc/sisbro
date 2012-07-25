@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/fabien/spree-faq.git
+  remote: git@github.com:fabien/spree-faq.git
   revision: 2bde4d103f596c82d3b0c100b0e5eb9dfcd0e461
   branch: spree-1-1-x
   specs:
@@ -7,7 +7,7 @@ GIT
       spree_core (>= 0.30.1)
 
 GIT
-  remote: git://github.com/fabien/spree-snippets.git
+  remote: git@github.com:fabien/spree-snippets.git
   revision: e112b21881d99250a98bb70a8fa8e221cc7d06fb
   branch: spree-1-1-x
   specs:
@@ -16,7 +16,7 @@ GIT
       spree_editor (>= 0.50.0)
 
 GIT
-  remote: git://github.com/fabien/spree_contact_us.git
+  remote: git@github.com:fabien/spree_contact_us.git
   revision: c38ceba7709e661d44a36c83a1f2c2eea7a8bdf5
   branch: spree-1-1-x
   specs:
@@ -24,7 +24,7 @@ GIT
       spree_core (~> 1.1.0)
 
 GIT
-  remote: git://github.com/railsdog/deface.git
+  remote: git@github.com:railsdog/deface.git
   revision: f22a7cc5e4d6708c26902446b124c22a0b56e57a
   specs:
     deface (0.9.1)
@@ -32,61 +32,85 @@ GIT
       rails (~> 3.1)
 
 GIT
-  remote: git://github.com/spree/spree_analytics.git
+  remote: git@github.com:spree/spree_analytics.git
   revision: 079949fd0e6d9ec87eefd8e3b9c70b5aa3bf25d3
   specs:
     spree_analytics (0.1.0)
       spree_core (>= 1.0.0.rc1)
 
 GIT
-  remote: git://github.com/spree/spree_editor.git
+  remote: git@github.com:spree/spree_editor.git
   revision: 9846455f5b48615a328d334e37f619ba7a571ba4
   specs:
     spree_editor (1.0.1)
       spree_core (>= 1.0.0)
       tinymce-rails (>= 3.4.7.0.1)
 
-PATH
-  remote: vendor/extensions/spree_email_to_friend/
+GIT
+  remote: git@github.com:spree/spree_print_invoice.git
+  revision: d128f87f49118620a8d3f9bea720824e21ccbc24
+  specs:
+    spree_print_invoice (1.0.0)
+      prawn (= 0.8.4)
+      spree_core (~> 1.1.0)
+
+GIT
+  remote: git@github.com:spree/spree_static_content.git
+  revision: 2b7d51f53bb5376200f0d5af4b009a6cdadef523
+  branch: 1-1-stable
+  specs:
+    spree_static_content (1.1)
+      spree_auth (~> 1.1.0)
+      spree_core (~> 1.1.0)
+
+GIT
+  remote: git@github.com:whitmanc/spree_email_to_friend.git
+  revision: 77be9275b060c18fd5ca571181721a68b1082ff1
   specs:
     spree_email_to_friend (1.2)
       recaptcha (>= 0.3.1)
       spree_auth (>= 0.70.0)
       spree_core (>= 0.70.0)
 
-PATH
-  remote: vendor/extensions/spree_minicart
+GIT
+  remote: git@github.com:whitmanc/spree_minicart.git
+  revision: fe24ddab934ebc7f17865526d23a4c9053c3509a
   specs:
     spree_minicart (1.1.0)
       spree_core (~> 1.1.0)
       spree_sample
 
-PATH
-  remote: vendor/extensions/spree_pinterest
+GIT
+  remote: git@github.com:whitmanc/spree_pinterest.git
+  revision: 10eea1019d5b92645060cd6d5ef751b7d4541403
   specs:
     spree_pinterest (0.2.1)
       spree_core (>= 1.0.0)
 
-PATH
-  remote: vendor/extensions/spree_product_sort/
+GIT
+  remote: git@github.com:whitmanc/spree_product_sort.git
+  revision: 42486977f19eccee1e85e23cbd0c89e8e9bb0194
   specs:
     spree_product_sort (1.0.0)
       spree_core (>= 0.60.0)
 
-PATH
-  remote: vendor/extensions/spree_recently_viewed
+GIT
+  remote: git@github.com:whitmanc/spree_recently_viewed.git
+  revision: 94e9b2a44bc34eb3d54ec0f6b72b44df3219acb7
   specs:
     spree_recently_viewed (1.1)
       spree_core (>= 1.0.0.rc1)
 
-PATH
-  remote: vendor/extensions/spree_related_products/
+GIT
+  remote: git@github.com:whitmanc/spree_related_products.git
+  revision: 06cac70ac40d13931fdbc3ab5354942cb2e62a09
   specs:
     spree_related_products (3.2)
       spree_core (>= 1.0.0)
 
-PATH
-  remote: vendor/extensions/spree_wishlist
+GIT
+  remote: git@github.com:whitmanc/spree_wishlist.git
+  revision: 1541703fee7905ce8a461fe7fe020e76f0ee9f67
   specs:
     spree_wishlist (1.2)
       spree_core (>= 1.0.0.rc3)
@@ -243,6 +267,13 @@ GEM
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
+    prawn (0.8.4)
+      prawn-core (>= 0.8.4, < 0.9)
+      prawn-layout (>= 0.8.4, < 0.9)
+      prawn-security (>= 0.8.4, < 0.9)
+    prawn-core (0.8.4)
+    prawn-layout (0.8.4)
+    prawn-security (0.8.4)
     rabl (0.6.5)
       activesupport (>= 2.3.14)
       multi_json (~> 1.0)
@@ -398,10 +429,12 @@ DEPENDENCIES
   spree_faq!
   spree_minicart!
   spree_pinterest!
+  spree_print_invoice!
   spree_product_sort!
   spree_recently_viewed!
   spree_related_products!
   spree_snippets!
+  spree_static_content!
   spree_wishlist!
   therubyracer
   tinymce-rails (>= 3.4.7.0.1)
