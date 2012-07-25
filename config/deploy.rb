@@ -1,17 +1,10 @@
 require "bundler/capistrano"
 load 'deploy/assets'
 
-#set :rvm_ruby_string, 'ree@rails3'                     # Or:
-set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
-
-require "rvm/capistrano"
-
 set :application, "spree"
 set :user, 'spree'
 set :group, 'www-data'
 set :rails_env, 'production'
-
-set :rvm_type, :system  
 
 role :web, '50.116.11.162'
 role :app, '50.116.11.162'
@@ -65,3 +58,5 @@ after 'deploy:start', 'foreman:start'
 
 before 'deploy:restart', 'foreman:export'
 after 'deploy:restart', 'foreman:restart'
+
+export rvm_trust_rvmrcs_flag=1
