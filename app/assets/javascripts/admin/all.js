@@ -7,8 +7,8 @@
 
 //= require admin/spree_core
 //= require admin/spree_auth
-//= require admin/spree_api
 //= require admin/spree_promo
 
 //= require_tree .
 //= require admin/spree_editor
+//= require admin/spree_product_sort

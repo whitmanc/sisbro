@@ -18,14 +18,11 @@
       <header id="header" class="row" data-hook>
       
         <div id="header-left">
-          <%= render_snippet('header_left_side') %>
+
         </div>
 
         <nav id="top-nav-bar" class="columns omega ten">
           <ul id="nav-bar" class="inline" data-hook>
-            <% Spree::Page.header_links.each do |page| %>
-              <%= "<li>#{link_to page.title, page.slug}</li>".html_safe %>
-            <% end %>
             <%= render :partial => 'spree/shared/nav_bar' %>
             <%= render :partial => 'spree/shared/store_menu' if store_menu? %>
           </ul>
@@ -37,20 +34,14 @@
         
         <% if content_for?(:sidebar) %>
           <aside id="sidebar" class="columns alpha four" data-hook>
-            <%= render_snippet('sidebar_top') %>
             <%= yield :sidebar %>
-            <%= render_snippet('sidebar_bottom') %>
           </aside>
         <% end %>
 
         <div id="content" class="columns omega <% if !content_for?(:sidebar) %> sixteen alpha <% else %> twelve <% end %>" data-hook>
           <%= breadcrumbs(@taxon) %>
           <%= flash_messages %>
-          <%= render_snippet 'homepage_above_products' if on_root? %>
           <%= yield %>
-          <div id="homepage-bottom-snippet">
-            <%= render_snippet 'homepage_below_products' if on_root?  %>
-          </div>
         </div>
 
       </div>
@@ -59,13 +50,11 @@
         <div id="footer-left" class="columns alpha eight" data-hook>
           <ul>
             <li><a href="http://sisbro.com">Sisbro.com</a></li>
-            <% Spree::Page.header_links.each do |page| %>
-              <%= "<li>#{link_to page.title, page.slug}</li>".html_safe %>
-            <% end %>
+            
             <li><%= link_to "Sitemap", "/sitemap" %></li>
           </ul>
         </div>
-        <div id="footer-right" class="columns omega eight" data-hook><%= render_snippet 'footer_right' %></div>
+        
       </footer>
     </div>  
     
