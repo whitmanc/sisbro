@@ -16,16 +16,17 @@ group :development, :test do
   gem "rspec-rails", ">= 2.0.1"
   gem "capybara", "= 0.4.0"
   # gem 'ruby-debug'
+  gem 'capistrano'
   gem "launchy", ">= 0.3.7"
 end
 
 group :production do
-  gem 'foreman'
   gem 'unicorn'
-  gem 'therubyracer'
+  gem 'mysql2'
+  gem 'foreman'
+  gem 'therubyracer' #only required for 0.70.x or later
   gem 'newrelic_rpm'
 end
-
 
 gem 'spree'                  , '1.1.2.rc1'                     
 
