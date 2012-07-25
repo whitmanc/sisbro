@@ -20,6 +20,15 @@ set :use_sudo,    false
 default_run_options[:pty] = true
 set :ssh_options, { :forward_agent => true }
 
+# Add RVM's lib directory to the load path.
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+
+# Load RVM's capistrano plugin.    
+require "rvm/capistrano"
+
+set :rvm_ruby_string, '1.9.3-p125'
+set :rvm_type, :user  # Don't use system-wide RVM
+
 namespace :foreman do
   desc "Export the Procfile to Ubuntu's upstart scripts"
   task :export, :roles => :app do
