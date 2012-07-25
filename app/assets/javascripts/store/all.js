@@ -5,9 +5,12 @@
 // the compiled file.
 //
 
+//= require jquery-1.7.1.min
+//= require jquery-ui.min
 //= require store/spree_core
 //= require store/spree_auth
 //= require store/spree_promo
 
 //= require_tree .
 //= require store/spree_wishlist
+//= require store/spree_minicart

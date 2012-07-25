@@ -26,7 +26,6 @@ input[type="week"]:focus {
 nav #main-nav-bar li#link-to-cart:hover {
   border-color: #74A629;
 }
-/* line 292, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li#link-to-cart:hover .amount {
   border-color: #74A629;
 }
@@ -55,10 +54,10 @@ input[type="submit"], input[type="button"], input[type="reset"], button, a.butto
   background: #74A629;
 }
 a {
-  color: #005CAA !important;
+  color: #005CAA;
 }
 a:hover {
-  color: #005CAA !important;
+  color: #005CAA;
   text-decoration: underline;
 }
 span.price {
@@ -73,11 +72,11 @@ ul#products li .price {
 #nav-bar a {
   font-size: 10px;
   font-weight: normal;
-  color:#996633 !important;
+  color:#996633;
 }
 nav#top-nav-bar ul li a {
   font-weight: normal;
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 #nav-bar a:hover {
@@ -299,16 +298,35 @@ a.button.large {
 #wishlist-form {
   margin-top:8px;
 }
+#wishlist-link {
+  font-weight:normal !important;
+}
 .right {
   float: right;
-}
-#wishlist-link a {
-  font-weight: bold !important;
-  font-size:12px;
 }
 #products iframe {
   opacity:0.65;
 }
 #products iframe:hover {
   opacity:1;
+}
+
+#nav-bar a{
+  font-size: 20px;
+  font-weight: normal;
+  color:white;
+}
+#minicart-details a {
+  font-size: 40px;
+  font-weight: normal;
+  color: #74A629 !imporant;
+}
+.delete, .cart {
+  color: black !important;
+  text-transform:none !important;
+}
+#home-link, #wishlist-link {
+  position: relative;
+  right: -16px;
+  top: -3px;
 }

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120725051815) do
+ActiveRecord::Schema.define(:version => 20120725115029) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -136,6 +136,17 @@ ActiveRecord::Schema.define(:version => 20120725051815) do
     t.boolean  "test_mode",   :default => true
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+  end
+
+  create_table "spree_inquiries", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "inquiry_type"
+    t.string   "order_no"
+    t.text     "message"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "phone_number"
   end
 
   create_table "spree_inventory_units", :force => true do |t|
@@ -412,6 +423,23 @@ ActiveRecord::Schema.define(:version => 20120725051815) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "spree_question_categories", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "locale"
+  end
+
+  create_table "spree_questions", :force => true do |t|
+    t.integer  "question_category_id"
+    t.text     "question"
+    t.text     "answer"
+    t.integer  "position"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
   create_table "spree_relation_types", :force => true do |t|
     t.string   "name"
     t.text     "description"
@@ -492,8 +520,9 @@ ActiveRecord::Schema.define(:version => 20120725051815) do
     t.text     "content"
     t.integer  "created_by"
     t.integer  "modified_by"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.boolean  "is_active",   :default => false, :null => false
   end
 
   create_table "spree_state_changes", :force => true do |t|

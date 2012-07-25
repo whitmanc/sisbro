@@ -3838,7 +3838,7 @@ input[type="submit"], input[type="button"], input[type="reset"], button, a.butto
   background: #74A629;
 }
 a {
-  color: #005CAA !important;
+  color: #005CAA;
 }
 a:hover {
   color: #005CAA !important;
@@ -3852,11 +3852,6 @@ ul#products li .price {
 }
 #wrapper h1, #wrapper h2, .product-section-title, .price .selling {
   color: #74A629;
-}
-#nav-bar a {
-  font-size: 10px;
-  font-weight: normal;
-  color:#996633 !important;
 }
 nav#top-nav-bar ul li a {
   font-weight: normal;
@@ -4086,7 +4081,6 @@ a.button.large {
   float: right;
 }
 #wishlist-link a {
-  font-weight: bold !important;
   font-size:12px;
 }
 #products iframe {

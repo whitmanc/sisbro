@@ -1,9 +1,15 @@
 <% content_for :head do %>
   
 <%
-  url = escape spree.product_url(@product)
-  media = escape absolute_image_url(@product.images.first.attachment.url)
-  description = escape @product.name
+  url = spree.product_url(@product)
+  
+  description = @product.name
+  
+  if @product.images.first
+    media = absolute_image_url(@product.images.first.attachment.url)
+  else 
+    media = ""
+  end
 %>
   <meta property="og:title" content="<%= description %>" />
   <meta property="og:type" content="product" />
