@@ -1,10 +1,17 @@
 require "bundler/capistrano"
 load 'deploy/assets'
 
+#set :rvm_ruby_string, 'ree@rails3'                     # Or:
+set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
+
+require "rvm/capistrano"
+
 set :application, "spree"
 set :user, 'spree'
 set :group, 'www-data'
 set :rails_env, 'production'
+
+set :rvm_type, :system  
 
 role :web, '50.116.11.162'
 role :app, '50.116.11.162'
@@ -19,15 +26,6 @@ set :use_sudo,    false
 
 default_run_options[:pty] = true
 set :ssh_options, { :forward_agent => true }
-
-# Add RVM's lib directory to the load path.
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
-
-# Load RVM's capistrano plugin.    
-require "rvm/capistrano"
-
-set :rvm_ruby_string, '1.9.3-p125'
-set :rvm_type, :user  # Don't use system-wide RVM
 
 namespace :foreman do
   desc "Export the Procfile to Ubuntu's upstart scripts"
