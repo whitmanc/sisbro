@@ -40,7 +40,7 @@ gem 'deface'                 , :git    => 'git@github.com:railsdog/deface.git'
 #                                 
 #gem 'spree_minicart'         , :git    => 'git@github.com:whitmanc/spree_minicart.git'
 #                                      
-#gem 'spree_analytics'        , :git    => 'git@github.com:spree/spree_analytics.git'
+gem 'spree_analytics'        , :git    => 'git@github.com:spree/spree_analytics.git'
 #                                       
 #gem 'spree_editor'           , :git    => 'git@github.com:spree/spree_editor.git'
 #
