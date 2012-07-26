@@ -57,6 +57,7 @@ namespace :db do
   end
 end
 
+after "deploy:finalize_update", "db:db_config"
 
 before 'deploy:assets:precompile', 'deploy:symlink_shared'
 
