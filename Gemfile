@@ -34,9 +34,9 @@ gem "recaptcha"              , :require => "recaptcha/rails"
 
 gem 'deface'                 , :git    => 'git@github.com:railsdog/deface.git'
                                       
-#gem 'spree_pinterest'        , :git    => 'git@github.com:whitmanc/spree_pinterest.git'
+gem 'spree_pinterest'        , :git    => 'git@github.com:whitmanc/spree_pinterest.git'
 #
-#gem 'spree_wishlist'         , :git    => 'git@github.com:whitmanc/spree_wishlist.git'
+gem 'spree_wishlist'         , :git    => 'git@github.com:whitmanc/spree_wishlist.git'
 #                                 
 #gem 'spree_minicart'         , :git    => 'git@github.com:whitmanc/spree_minicart.git'
 #                                      
@@ -44,7 +44,7 @@ gem 'spree_analytics'        , :git    => 'git@github.com:spree/spree_analytics.
 #                                       
 gem 'spree_editor'           , :git    => 'git@github.com:spree/spree_editor.git'
 #
-#gem 'spree_product_sort'     , :git    => 'git@github.com:whitmanc/spree_product_sort.git'
+gem 'spree_product_sort'     , :git    => 'git@github.com:whitmanc/spree_product_sort.git'
 #
 #gem 'spree_print_invoice'    , :git    => 'git@github.com:spree/spree_print_invoice.git'
 #   
