@@ -51,6 +51,13 @@ namespace :deploy do
   end
 end
 
+namespace :db do
+  task :db_config, :except => { :no_release => true }, :role => :app do
+    run "cp -f ~/database.yml #{release_path}/config/database.yml"
+  end
+end
+
+
 before 'deploy:assets:precompile', 'deploy:symlink_shared'
 
 before 'deploy:start', 'foreman:export'
