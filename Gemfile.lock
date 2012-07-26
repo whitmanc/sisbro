@@ -37,13 +37,6 @@ GIT
       spree_core (>= 1.0.0)
 
 GIT
-  remote: git@github.com:whitmanc/spree_product_sort.git
-  revision: 42486977f19eccee1e85e23cbd0c89e8e9bb0194
-  specs:
-    spree_product_sort (1.0.0)
-      spree_core (>= 0.60.0)
-
-GIT
   remote: git@github.com:whitmanc/spree_wishlist.git
   revision: 1541703fee7905ce8a461fe7fe020e76f0ee9f67
   specs:
@@ -352,7 +345,6 @@ DEPENDENCIES
   spree_editor!
   spree_minicart!
   spree_pinterest!
-  spree_product_sort!
   spree_wishlist!
   therubyracer
   tinymce-rails (>= 3.4.7.0.1)
