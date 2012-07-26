@@ -53,7 +53,7 @@ end
 
 namespace :db do
   task :db_config, :except => { :no_release => true }, :role => :app do
-    run "cp -f ~/database.yml #{release_path}/config/database.yml"
+    run "cp -f ~/data/spree/database.yml #{release_path}/config/database.yml"
   end
 end
 
