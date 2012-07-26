@@ -3,7 +3,7 @@
     <%= link_to t('email_to_friend.send_to_friend'), email_to_friend_url('product', @product) %>
   </p>
 
-  <iframe src="//www.facebook.com/plugins/like.php?href=<%= escape( product_url(@product) )%>&amp;send=false&amp;layout=standard&amp;width=180&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:35px;" allowTransparency="true"></iframe>
+  <iframe src="//www.facebook.com/plugins/like.php?href=<%= product_url(@product) %>&amp;send=false&amp;layout=standard&amp;width=180&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:35px;" allowTransparency="true"></iframe>
 
   <g:plusone size="medium" annotation="inline" width="180"></g:plusone>
   
@@ -13,7 +13,9 @@
   
   <br />
   
-  <%= pin_it_button(@product) %>
+  <%=
+   # pin_it_button(@product) 
+  %>
 
   <br /><br /><br />
   

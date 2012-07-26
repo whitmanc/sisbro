@@ -1,4 +1,4 @@
-<%= form_for :order, :url => populate_orders_url do |f| %>
+<%= form_for :order, :url => populate_orders_url, :remote => true do |f| %>
   <div data-hook="inside_product_cart_form" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
     <%= render 'social_buttons' %>
     <% if @product.has_variants? %>
@@ -38,7 +38,7 @@
             <%= number_field_tag (@product.has_variants? ? :quantity : "variants[#{@product.master.id}]"),
               1, :class => 'title', :in => 1..@product.on_hand %>
             &nbsp;
-            <%= button_tag :class => 'large primary', :id => 'add-to-cart-button' do %>
+            <%= button_tag :class => 'large primary', :id => 'add-to-cart-button', :type => 'submit'  do %>
               <%= t(:add_to_cart) %>
             <% end %>
           <% else %>

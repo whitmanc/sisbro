@@ -11,6 +11,7 @@
 //= require store/spree_auth
 //= require store/spree_promo
 
+//= require store/spree_minicart
+
 //= require_tree .
 //= require store/spree_wishlist
-//= require store/spree_minicart
