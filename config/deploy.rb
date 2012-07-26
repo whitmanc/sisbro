@@ -5,6 +5,7 @@ set :application, "spree"
 set :user, 'spree'
 set :group, 'www-data'
 set :rails_env, 'production'
+set :database_yml_in_scm, false
 
 role :web, '50.116.11.162'
 role :app, '50.116.11.162'
