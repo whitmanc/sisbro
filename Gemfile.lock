@@ -66,7 +66,7 @@ GIT
 
 GIT
   remote: git@github.com:whitmanc/spree_minicart.git
-  revision: 95c8ad58379ea4c8760de799016b27379ce72de3
+  revision: fe24ddab934ebc7f17865526d23a4c9053c3509a
   specs:
     spree_minicart (1.1.0)
       spree_core (~> 1.1.0)
