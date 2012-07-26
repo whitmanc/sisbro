@@ -24,7 +24,6 @@ group :production do
   gem 'mysql2'
   gem 'foreman'
   gem 'therubyracer'
-  gem 'newrelic_rpm'
 end
 
 gem 'spree'                  , '1.1.2.rc1'
@@ -33,7 +32,7 @@ gem 'tinymce-rails'          , '>= 3.4.7.0.1'
 
 gem "recaptcha"              , :require => "recaptcha/rails"
 
-gem 'deface'                 , :git    => 'git@github.com:railsdog/deface.git'
+# gem 'deface'                 , :git    => 'git@github.com:railsdog/deface.git'
                                       
 gem 'spree_pinterest'        , :git    => 'git@github.com:whitmanc/spree_pinterest.git'
 
