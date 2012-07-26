@@ -53,6 +53,7 @@ namespace :deploy do
 end
 
 namespace :db do
+  desc "Copy manually uploaded database.yml into current releases config folder"
   task :db_config, :except => { :no_release => true }, :role => :app do
     run "cp -f /data/spree/database.yml #{release_path}/config/database.yml"
   end
