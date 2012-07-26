@@ -2,63 +2,65 @@
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
 */
 #popup_container {
-	font-family: Arial, sans-serif;
-	font-size: 12px;
-	min-width: 300px; /* Dialog will be no smaller than this */
-	max-width: 600px; /* Dialog will wrap after this width */
-	background: #FFF;
-	border: solid 5px #999;
-	color: #000;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  min-width: 300px; /* Dialog will be no smaller than this */
+  max-width: 600px; /* Dialog will wrap after this width */
+  background: #FFF;
+  border: solid 5px #999;
+  color: #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 #popup_title {
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 1.75em;
-	color: #666;
-	background: #CCC url(images/title.gif) top repeat-x;
-	border: solid 1px #FFF;
-	border-bottom: solid 1px #999;
-	cursor: default;
-	padding: 0em;
-	margin: 0em;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.75em;
+  color: #666;
+  background: #CCC url(/assets/jquery.alerts/images/title.gif) top repeat-x;
+  border: solid 1px #FFF;
+  border-bottom: solid 1px #999;
+  cursor: default;
+  padding: 0em;
+  margin: 0em;
 }
 
 #popup_content {
-	background: 16px 16px no-repeat url(images/info.gif);
-	padding: 1em 1.75em;
-	margin: 0em;
+  background: 16px 16px no-repeat url(/assets/jquery.alerts/images/info.gif);
+  padding: 1em 1.75em;
+  margin: 0em;
 }
 
 #popup_content.alert {
-	background-image: url(images/info.gif);
+  background-image: url(/assets/jquery.alerts/images/info.gif);
 }
 
 #popup_content.confirm {
-	background-image: url(images/important.gif);
+  background-image: url(/assets/jquery.alerts/images/important.gif);
 }
 
 #popup_content.prompt {
-	background-image: url(images/help.gif);
+  background-image: url(/assets/jquery.alerts/images/help.gif);
 }
 
 #popup_message {
-	padding-left: 48px;
+  padding-left: 48px;
 }
 
 #popup_panel {
-	text-align: center;
-	margin: 1em 0em 0em 1em;
+  text-align: center;
+  margin: 1em 0em 0em 1em;
 }
 
 #popup_prompt {
-	margin: .5em 0em;
+  margin: .5em 0em;
 }
 /* Spree Custom dialog styles */
 #popup_container.spree {
@@ -754,7 +756,7 @@ li.token-input-token, div.token-input-dropdown ul li.token-input-selected-dropdo
 ----------------------------------*/
 
 /* states and images */
-.ui-icon { width: 16px; height: 16px; background-image: url(jquery-ui/ui-icons_ff0084_256x240.png); }
+.ui-icon { width: 16px; height: 16px; background-image: url(/assets/jquery-ui/ui-icons_ff0084_256x240.png); }
 .ui-widget-content .ui-icon {background-image: url(/assets/jquery-ui/ui-icons_ff0084_256x240.png); }
 .ui-widget-header .ui-icon {background-image: url(/assets/jquery-ui/ui-icons_0073ea_256x240.png); }
 .ui-state-default .ui-icon { background-image: url(/assets/jquery-ui/ui-icons_666666_256x240.png); }
@@ -1498,23 +1500,13 @@ div#calculator-settings-warning, .warning {
   padding-right:10px;
 }
 
-ul#shipping-specs {
+ul#shipping_specs {
   margin: 0;
   padding-bottom:10px;
 }
-ul#shipping-specs li {
+ul#shipping_specs li {
   list-style-image:none;
   display:inline;
-}
-
-.product-scopes ul > li {
-  float: left;
-  width: 220px;
-  margin-right: 20px;
-}
-
-.product-scopes .invalid {
-  background-color: red;
 }
 
 div.product-preview-products {
@@ -1558,50 +1550,29 @@ div.product-preview-products {
   padding-left:10px;
 }
 
-
-
-
-
-
-
-/* Product Groups */
-
-table#product_scopes tr {
-  background-color: #eee;
-
+.product-prototype-options,
+.product-prototype-options ul {
+  list-style-type: none;
+  margin-left: 0;
 }
-table#product_scopes tr td {
-  border-top: 4px solid #fff;
-  border-bottom: 1px solid #bbb;
-  padding: 5px 10px;
-}
-table#product_scopes tr td.actions {
-  vertical-align: middle;
-  text-align: right;
-}
-table#product_scopes tr td table {
-  margin: 0;
+.product-prototype-options > li {
+  display: block;
+  float: left;
   width: auto;
 }
-table#product_scopes tr td table tr td {
-  padding: 0;
-  border:  none;
-  padding-right: 5px;
+.product-prototype-options > li b {
+  display: block;
+  padding-right: 30px;
+  margin-right: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
 }
-
-#product_group_forms_container {
-  position: relative;
+.product-prototype-options > li ul {
+  padding: 5px 0;
 }
-#new_product_group_form {
-  position: absolute;
-  right: 25px;
-  bottom: 0;
+.product-prototype-options > li label {
+  padding-left: 5px;
 }
-#new_product_group_form p {
-  text-align: right;
-  margin: 0;
-}
-
 
 span.handle{
   background-image: url(/assets/admin/icons/switch.png);
@@ -1619,7 +1590,9 @@ span.handle{
   border: 1px solid #000;
 }
 
-.ac_results li h4 { width: 100% }
+.ac_results li div { max-width: 90%; }
+
+.ac_results li h4 { width: 100%; }
 
 .ac_results li:last-child { border: none; }
 
@@ -1706,16 +1679,39 @@ span.handle{
   float: right;
   margin-right: 25px;
 }
+
+/* Image Settings Styles */
+#s3_settings {
+  display: none;
+}
+#styles_list {
+  list-style: none;
+}
+#headers_list {
+  list-style: none;
+}
+#s3_settings label, #attachment_styles label {
+  padding-left: 3px;
+  padding-right: 5px;
+}
 /*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+
+
+
+
+
+
+
+
 */
 
 /*
-*/
 
-/*
 */
 
 .promotion_rule, .promotion_action {
@@ -1763,6 +1759,9 @@ span.handle{
   bottom: 20px;
 }
 /*
+
+
+
 */
 
 /*
@@ -1770,6 +1769,13 @@ span.handle{
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *
+
+
+
+
+
+
+
 
 
 */
@@ -1813,18 +1819,41 @@ form div.left {
   color
 }
 /*
-*/
-
-/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *
+
 */
 
 
 form.edit_product div.left { width: 67%; }
 form.edit_product div.right { width: 30%; }
+/*
+
+*/
+
+ul.products_ul {
+  list-type: none;
+  margin-left: 20px;
+  border: 1px solid #CCC;
+}
+
+.products_ul li {
+  border: 1px solid #DDD;
+  background-color: #F9F9F9;
+  list-style: none;
+  margin-left: 0;
+  padding: 3px;
+}
+
+.products_ul li .handle {
+  display: inline-block;
+  color: silver;
+  width: 1.5em;
+  cursor: row-resize;
+  text-align: center;
+}
 #updatecart #order-charges td {
   text-align: right;
 }
@@ -2638,46 +2667,59 @@ textarea::-moz-focus-inner {
 .ie6_input_disabled {
   background: #eeeeee;
 }
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic|&subset=latin,cyrillic,greek,greek-ext,latin-ext,cyrillic-ext);
+@import url(//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic|&subset=latin,cyrillic,greek,greek-ext,latin-ext,cyrillic-ext);
 /*--------------------------------------*/
 /* Colors
 /*--------------------------------------*/
-/* Dark gray      */
-/* Mid light gray */
-/* Light blue     */
-/* Lighter blue   */
-/* Light gray     */
 /* Spree green    */
 /* Error red      */
 /*--------------------------------------*/
-/* Fonts
+/* Fonts import from remote
 /*--------------------------------------*/
+/*--------------------------------------*/
+/* Font families
+/*--------------------------------------*/
+/*--------------------------------------
+  | Font sizes
+  |--------------------------------------
+  |- Navigation                         
+  |                                    */
+/*|------------------------------------
+  |- Product Listing                         
+  |                                  */
+/*|------------------------------------
+  |- Product Details
+  |                                  */
+/*|------------------------------------
+  |- Basic
+  |                                  */
 /*--------------------------------------*/
 /* Basic styles 
 /*--------------------------------------*/
-/* line 21, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 6, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #404042;
   line-height: 18px;
   font-size: 12px;
+  background-color: white;
 }
 
 /* Line style */
-/* line 29, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 15, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 hr {
-  border-color: #dedede;
+  border-color: #d9d9db;
 }
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
-/* line 34, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 20, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ::-moz-selection {
   background: #00adee;
   color: white;
   text-shadow: none;
 }
 
-/* line 35, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 21, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ::selection {
   background: #00adee;
   color: white;
@@ -2685,19 +2727,19 @@ hr {
 }
 
 /*  j.mp/webkit-tap-highlight-color */
-/* line 38, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 a:link {
   -webkit-tap-highlight-color: #00adee;
 }
 
-/* line 40, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ins {
   background-color: #00adee;
   color: white;
   text-decoration: none;
 }
 
-/* line 41, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 27, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 mark {
   background-color: #00adee;
   color: white;
@@ -2708,40 +2750,40 @@ mark {
 /*--------------------------------------*/
 /* Links
 /*--------------------------------------*/
-/* line 46, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 a {
   text-decoration: none;
-  color: #404042;
+  color: #00adee;
 }
-/* line 50, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 a:hover {
-  color: #00adee !important;
+  color: #0088bb !important;
 }
 
 /*--------------------------------------*/
 /* Lists
 /*--------------------------------------*/
-/* line 64, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 46, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ul.inline li, ol.inline li {
   display: inline-block;
 }
 
-/* line 71, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 53, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 dl dt, dl dd {
   display: inline-block;
   width: 50%;
   padding: 5px;
 }
-/* line 76, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 58, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 dl dt.odd, dl dd.odd {
-  background-color: #dedede;
+  background-color: #d9d9db;
 }
-/* line 80, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 62, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 dl dt {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 84, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 66, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 dl dd {
   margin-left: -23px;
 }
@@ -2749,62 +2791,64 @@ dl dd {
 /*--------------------------------------*/
 /* Headers
 /*--------------------------------------*/
-/* line 92, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-/* line 95, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 74, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 h1 {
   font-size: 24px;
   line-height: 34px;
 }
 
-/* line 96, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 75, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 h2 {
-  font-size: 23px;
+  font-size: 22px;
   line-height: 32px;
 }
 
-/* line 97, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 76, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 h3 {
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 98, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 77, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 h4 {
   font-size: 18px;
   line-height: 28px;
 }
 
-/* line 99, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 78, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 h5 {
-  font-size: 16px;
-  line-height: 26px;
-}
-
-/* line 100, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
-h6 {
   font-size: 14px;
   line-height: 24px;
+}
+
+/* line 79, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+h6 {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/* line 81, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404042;
 }
 
 /*--------------------------------------*/
 /* Forms
 /*--------------------------------------*/
-/* line 110, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 94, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 textarea, input[type="date"],
 input[type="datetime"], input[type="datetime-local"],
 input[type="email"], input[type="month"], input[type="number"],
 input[type="password"], input[type="search"], input[type="tel"],
 input[type="text"], input[type="time"], input[type="url"],
 input[type="week"] {
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
   padding: 2px 5px;
   font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
 }
-/* line 115, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 100, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 textarea:active, textarea:focus, input[type="date"]:active, input[type="date"]:focus,
 input[type="datetime"]:active,
 input[type="datetime"]:focus, input[type="datetime-local"]:active, input[type="datetime-local"]:focus,
@@ -2825,7 +2869,7 @@ input[type="week"]:focus {
   -o-box-shadow: none;
   box-shadow: none;
 }
-/* line 124, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 109, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 textarea.error, input[type="date"].error,
 input[type="datetime"].error, input[type="datetime-local"].error,
 input[type="email"].error, input[type="month"].error, input[type="number"].error,
@@ -2835,16 +2879,16 @@ input[type="week"].error {
   border-color: #e45353;
 }
 
-/* line 129, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 114, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 select {
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
   font-family: "Ubuntu", sans-serif;
   background-image: url("select_arrow.gif");
   background-repeat: no-repeat;
   background-position: right center;
 }
 
-/* line 141, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 126, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 label.error {
   display: block;
   font-size: 11px;
@@ -2852,7 +2896,14 @@ label.error {
   margin-top: 3px;
 }
 
-/* line 149, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 133, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+span.required {
+  color: #e45353;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* line 140, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 input[type="submit"], input[type="button"],
 input[type="reset"], button, a.button {
   background-color: #00adee;
@@ -2860,6 +2911,7 @@ input[type="reset"], button, a.button {
   text-shadow: none;
   color: white;
   font-weight: bold;
+  font-size: 12px;
   font-family: "Ubuntu", sans-serif;
   border: 1px solid rgba(0, 138, 189, 0.75);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -2875,13 +2927,19 @@ input[type="reset"], button, a.button {
   border-radius: 0px;
   vertical-align: text-top;
 }
-/* line 172, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 162, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 input[type="submit"].large, input[type="button"].large,
 input[type="reset"].large, button.large, a.button.large {
   padding: 7px 10px;
   font-size: 14px;
 }
-/* line 177, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 167, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+input[type="submit"].gray, input[type="button"].gray,
+input[type="reset"].gray, button.gray, a.button.gray {
+  background-color: #727276;
+  border-color: #59595c;
+}
+/* line 172, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 input[type="submit"]:hover, input[type="button"]:hover,
 input[type="reset"]:hover, button:hover, a.button:hover {
   background-image: none;
@@ -2890,19 +2948,19 @@ input[type="reset"]:hover, button:hover, a.button:hover {
   color: white !important;
 }
 
-/* line 186, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 181, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .ie8 a.button {
   line-height: 16px;
 }
 
-/* line 193, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 188, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 input[type="checkbox"], input[type="button"],
 input[type="submit"], input[type="reset"],
 button, label {
   vertical-align: middle;
 }
 
-/* line 197, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 192, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 a.button {
   display: inline-block;
   line-height: 15px;
@@ -2913,16 +2971,16 @@ a.button {
 /*--------------------------------------*/
 /* Footer
 /*--------------------------------------*/
-/* line 207, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 202, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 footer#footer {
   padding: 10px 0;
-  border-top: 1px solid #dedede;
+  border-top: 1px solid #d9d9db;
 }
 
 /*--------------------------------------*/
 /* Paragraphs
 /*--------------------------------------*/
-/* line 215, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 210, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 p {
   padding: 10px 0;
 }
@@ -2930,116 +2988,124 @@ p {
 /*--------------------------------------*/
 /* Tables
 /*--------------------------------------*/
-/* line 223, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 218, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table thead {
-  background-color: #dedede;
+  background-color: #d9d9db;
   text-transform: uppercase;
 }
-/* line 228, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 223, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table thead tr th {
   padding: 5px 10px;
 }
-/* line 235, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 230, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table tbody tr, table tfoot tr {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
 }
-/* line 238, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 233, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table tbody tr td, table tfoot tr td {
   vertical-align: middle;
   padding: 5px 10px;
 }
-/* line 243, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 238, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table tbody tr.alt, table tbody tr.odd, table tfoot tr.alt, table tfoot tr.odd {
-  background-color: #f0f8ff;
+  background-color: #eefaff;
 }
 
 /*--------------------------------------*/
 /* Navigation
 /*--------------------------------------*/
-/* line 253, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 248, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav#top-nav-bar {
   text-align: right;
   margin-top: 20px;
 }
-/* line 258, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 253, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav#top-nav-bar ul li {
   margin-bottom: 5px;
   padding-left: 10px;
 }
-/* line 262, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 257, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav#top-nav-bar ul li a {
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-/* line 271, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 266, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 20px;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
   padding-bottom: 6px;
 }
-/* line 279, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 275, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li a {
   font-size: 16px;
   padding: 5px;
 }
-/* line 284, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 281, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+nav #main-nav-bar li:first-child a {
+  padding-left: 0;
+}
+/* line 286, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li#link-to-cart {
   float: right;
   padding-left: 24px;
   background: url("cart.png") no-repeat left center;
 }
-/* line 289, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 291, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li#link-to-cart:hover {
   border-color: #00adee;
 }
-/* line 292, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 294, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li#link-to-cart:hover .amount {
   border-color: #00adee;
 }
-/* line 297, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 299, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li#link-to-cart a {
   font-weight: normal;
   font-size: 16px;
   color: #00adee;
 }
-/* line 302, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 304, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li#link-to-cart a .amount {
   font-size: 18px;
   font-weight: bold;
-  border-left: 1px solid #dedede;
+  border-left: 1px solid #d9d9db;
   padding-left: 5px;
   padding-bottom: 5px;
 }
 
-/* line 315, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 317, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav#taxonomies .taxonomy-root {
   text-transform: uppercase;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
   margin-bottom: 5px;
-  color: #00adee;
+  font-size: 14px;
 }
-/* line 322, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 324, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 nav#taxonomies .taxons-list {
   padding-left: 20px;
   margin-bottom: 20px;
   list-style: disc outside;
 }
+/* line 330, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+nav#taxonomies .taxons-list li a {
+  font-size: 12px;
+}
 
-/* line 329, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 337, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #breadcrumbs {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
   padding: 3px 0;
   margin-bottom: 15px;
 }
-/* line 335, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 343, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #breadcrumbs li a {
   color: #00adee;
 }
-/* line 338, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 346, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #breadcrumbs li span {
   text-transform: uppercase;
   font-weight: bold;
@@ -3048,36 +3114,36 @@ nav#taxonomies .taxons-list {
 /*--------------------------------------*/
 /* Flash notices & errors
 /*--------------------------------------*/
-/* line 348, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 356, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .flash, .errorExplanation {
   padding: 10px;
   color: white;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 354, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 362, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .flash.notice, .notice.errorExplanation {
   background-color: #00adee;
 }
-/* line 357, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 365, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .flash.success, .success.errorExplanation {
   background-color: #8dba53;
 }
-/* line 360, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 368, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .flash.error, .errorExplanation, .error.errorExplanation {
   background-color: #e45353;
 }
 
-/* line 369, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 377, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .errorExplanation p {
   font-weight: normal;
 }
-/* line 373, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 381, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .errorExplanation ul {
   list-style: disc outside;
   margin-left: 30px;
 }
-/* line 377, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 385, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .errorExplanation ul li {
   font-weight: normal;
 }
@@ -3085,7 +3151,7 @@ nav#taxonomies .taxons-list {
 /*--------------------------------------*/
 /* Main search bar
 /*--------------------------------------*/
-/* line 386, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 394, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #search-bar {
   display: block;
 }
@@ -3093,72 +3159,94 @@ nav#taxonomies .taxons-list {
 /*--------------------------------------*/
 /* Products
 /*--------------------------------------*/
-/* line 393, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 402, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+[data-hook="product_show"] h6 {
+  font-size: 14px;
+}
+
+/* line 407, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .product-section-title {
   text-transform: uppercase;
-  color: #00adee;
   margin-top: 15px;
 }
 
-/* line 399, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 412, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .add-to-cart {
   margin-top: 15px;
 }
-/* line 402, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 415, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .add-to-cart input[type="number"] {
+  margin-right: 3px;
   width: 60px;
   vertical-align: middle;
   padding: 5px;
   height: 35px;
 }
 
-/* line 410, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 424, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 span.price, #checkout-summary table tr[data-hook="item_total"] td:last-child strong, #checkout-summary table #summary-order-total, #order_details td.price span, #order_details td.total span, #order_summary td.price span, #order_summary td.total span, table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"], div[data-hook="inside_cart_form"] #subtotal span.order-total {
   font-weight: bold;
   color: #00adee;
 }
-/* line 414, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 428, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 span.price.selling, #checkout-summary table tr[data-hook="item_total"] td:last-child strong.selling, #checkout-summary table .selling#summary-order-total, #order_details td.price span.selling, #order_details td.total span.selling, #order_summary td.price span.selling, #order_summary td.total span.selling, table#cart-detail tbody#line_items tr td.selling[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td.selling[data-hook="cart_item_total"], table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"], div[data-hook="inside_cart_form"] #subtotal span.selling.order-total {
   font-size: 20px;
 }
-/* line 417, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 431, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 span.price.diff, #checkout-summary table tr[data-hook="item_total"] td:last-child strong.diff, #checkout-summary table .diff#summary-order-total, #order_details td.price span.diff, #order_details td.total span.diff, #order_summary td.price span.diff, #order_summary td.total span.diff, table#cart-detail tbody#line_items tr td.diff[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td.diff[data-hook="cart_item_total"], div[data-hook="inside_cart_form"] #subtotal span.diff.order-total {
   font-weight: bold;
 }
 
-/* line 422, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
-ul#products {
-  margin-left: -10px;
-  margin-right: -10px;
+/* line 436, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+.taxon-title {
+  font-size: 20px;
 }
-/* line 426, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+
+/* line 440, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+.search-results-title {
+  font-size: 14px;
+}
+
+/* line 445, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+ul#products:after {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* line 454, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ul#products li {
   text-align: center;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 431, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 459, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ul#products li a {
   display: block;
 }
-/* line 434, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 462, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ul#products li a.info {
   height: 35px;
   margin-top: 5px;
+  font-size: 12px;
   color: #bbbbbb;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
+  overflow: hidden;
 }
-/* line 442, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 472, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ul#products li .product-image {
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
   padding: 5px;
   min-height: 110px;
+  background-color: white;
 }
-/* line 447, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 478, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ul#products li .product-image:hover {
   border-color: #00adee;
 }
-/* line 453, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 484, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 ul#products li .price {
   color: #00adee;
   font-size: 16px;
@@ -3166,28 +3254,28 @@ ul#products li .price {
   display: block;
 }
 
-/* line 462, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 493, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .subtaxon-title {
   text-transform: uppercase;
 }
-/* line 465, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 496, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .subtaxon-title a {
   color: #00adee;
 }
 
-/* line 470, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 501, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .search-results-title {
   text-transform: uppercase;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
   margin-bottom: 10px;
 }
 
-/* line 477, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 508, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #sidebar_products_search .navigation {
   margin-bottom: 15px;
 }
-/* line 481, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
-#sidebar_products_search span.category {
+/* line 512, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+#sidebar_products_search .filter-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -3198,132 +3286,153 @@ ul#products li .price {
   line-height: 24px;
 }
 
-/* line 493, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 524, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .taxon {
   overflow: hidden;
 }
 
-/* line 498, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 529, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-images #main-image {
   text-align: center;
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
+  background-color: white;
+}
+/* line 535, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+#product-images #product-thumbnails li {
+  background-color: white;
 }
 
-/* line 505, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 542, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-description .product-title {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
   margin-bottom: 15px;
+  color: #404042;
+  font-size: 24px;
+}
+/* line 549, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+#product-description [data-hook="product-description"] {
+  font-size: 12px;
+  color: #404042;
 }
 
-/* line 511, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 555, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-thumbnails {
   margin-top: 10px;
 }
-/* line 514, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 558, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-thumbnails li {
   margin-right: 6px;
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
 }
-/* line 518, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 562, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-thumbnails li img {
   padding: 5px;
 }
-/* line 522, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 566, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-thumbnails li:hover, #product-thumbnails li.selected {
   border-color: #00adee;
 }
 
-/* line 528, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 572, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-properties {
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
   padding: 10px;
 }
 
-/* line 535, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 579, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #product-variants ul li {
   padding: 5px;
+}
+
+/* line 586, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+#cart-form #inside-product-cart-form:after {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 /*--------------------------------------*/
 /* Checkout
 /*--------------------------------------*/
-/* line 544, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 599, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps {
   list-style: decimal inside;
   overflow: auto;
 }
-/* line 548, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 603, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps li {
   float: left;
   margin-right: 20px;
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px 20px;
-  color: #bbbbbb;
+  color: #727276;
 }
-/* line 556, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 611, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps li.current-first, .progress-steps li.current {
   background-color: #00adee;
   color: white;
 }
-/* line 561, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 616, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps li.completed-first, .progress-steps li.completed {
-  background-color: #dedede;
+  background-color: #d9d9db;
   color: white;
 }
-/* line 565, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 620, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps li.completed-first a, .progress-steps li.completed a {
   color: white;
 }
-/* line 569, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 624, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps li.completed-first:hover, .progress-steps li.completed:hover {
   background-color: #00adee;
   color: white;
 }
-/* line 573, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 628, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps li.completed-first:hover a, .progress-steps li.completed:hover a {
   color: white;
 }
-/* line 576, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 631, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 .progress-steps li.completed-first:hover a:hover, .progress-steps li.completed:hover a:hover {
   color: white !important;
 }
 
-/* line 585, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 640, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #checkout-summary {
   text-align: center;
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
   margin-top: 23px;
   margin-left: 0;
 }
-/* line 591, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 646, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #checkout-summary h3 {
   text-transform: uppercase;
   font-size: 14px;
-  color: #00adee;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
 }
-/* line 598, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 652, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #checkout-summary table {
   width: 100%;
 }
-/* line 609, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 663, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #checkout-summary table tr[data-hook="order_total"] {
   border-bottom: none;
 }
-/* line 613, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 667, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #checkout-summary table #summary-order-total {
   font-size: 14px;
 }
 
-/* line 621, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 675, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #billing, #shipping, #shipping_method,
 #payment, #order_details, #order_summary {
   margin-top: 10px;
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
   padding: 10px;
 }
-/* line 626, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 680, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #billing legend, #shipping legend, #shipping_method legend,
 #payment legend, #order_details legend, #order_summary legend {
   text-transform: uppercase;
@@ -3334,52 +3443,57 @@ ul#products li .price {
   margin-left: 15px;
 }
 
-/* line 636, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 690, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details, #order_summary {
   padding: 0;
 }
-/* line 639, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 693, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details div:last-child, #order_summary div:last-child {
   margin-left: -1px;
 }
-/* line 645, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 699, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details .payment-info .cc-type img, #order_summary .payment-info .cc-type img {
   vertical-align: middle;
 }
-/* line 657, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 711, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details table tfoot, #order_summary table tfoot {
   text-align: right;
-  color: #bbbbbb;
+  color: #727276;
 }
-/* line 661, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 715, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details table tfoot tr, #order_summary table tfoot tr {
   border: none;
 }
-/* line 665, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 719, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details table tfoot#order-total, #order_summary table tfoot#order-total {
   text-transform: uppercase;
   font-size: 16px;
   color: #404042;
 }
-/* line 670, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 724, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details table tfoot#order-total tr, #order_summary table tfoot#order-total tr {
-  border-top: 1px solid #dedede;
+  border-top: 1px solid #d9d9db;
 }
-/* line 673, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 727, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details table tfoot#order-total tr td, #order_summary table tfoot#order-total tr td {
   padding: 10px;
 }
-/* line 680, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
-#order_details .steps-data, #order_summary .steps-data {
-  padding: 10px;
+/* line 735, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+#order_details .steps-data div.columns, #order_summary .steps-data div.columns {
+  padding: 5px;
+  margin: 0;
 }
-/* line 683, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 739, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+#order_details .steps-data div.columns:first-child, #order_summary .steps-data div.columns:first-child {
+  margin-left: 10px;
+}
+/* line 744, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_details .steps-data h6, #order_summary .steps-data h6 {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #d9d9db;
   margin-bottom: 5px;
 }
 
-/* line 692, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 753, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #shipping_method p label {
   float: left;
   font-weight: bold;
@@ -3388,10 +3502,10 @@ ul#products li .price {
   padding: 5px;
 }
 
-/* line 702, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 763, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 p[data-hook="use_billing"] {
   float: right;
-  margin-top: -38px;
+  margin-top: -18px;
   background-color: white;
   padding: 5px;
 }
@@ -3399,84 +3513,83 @@ p[data-hook="use_billing"] {
 /*--------------------------------------*/
 /* Cart
 /*--------------------------------------*/
-/* line 712, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 773, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table#cart-detail {
   width: 100%;
 }
-/* line 722, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 783, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table#cart-detail tbody#line_items tr td[data-hook="cart_item_quantity"] .line_item_quantity {
   width: 40px;
 }
-/* line 727, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 788, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table#cart-detail tbody#line_items tr td[data-hook="cart_item_delete"] .delete {
   display: block;
   width: 20px;
 }
 
-/* line 737, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 798, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 div[data-hook="inside_cart_form"] .links {
   margin-top: 15px;
+  text-align: right;
 }
-/* line 741, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 803, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 div[data-hook="inside_cart_form"] #subtotal {
   text-align: right;
   text-transform: uppercase;
   margin-top: 15px;
 }
 
-/* line 752, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 814, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #empty-cart {
-  margin-top: 15px;
-  float: right;
+  margin-top: -75px !important;
+  float: left !important;
 }
 
 /*--------------------------------------*/
 /* Account
 /*--------------------------------------*/
-/* line 761, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 823, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #existing-customer h6, #new-customer h6, #forgot-password h6 {
   text-transform: uppercase;
-  color: #00adee;
 }
 
-/* line 768, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 829, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #registration h6 {
   text-transform: uppercase;
-  color: #00adee;
 }
-/* line 773, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 833, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #registration #existing-customer {
   width: auto;
   text-align: left;
 }
 
-/* line 779, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 839, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #user-info {
   margin-bottom: 15px;
-  border: 1px solid #dedede;
+  border: 1px solid #d9d9db;
   padding: 10px;
 }
 
 /*--------------------------------------*/
 /* Order
 /*--------------------------------------*/
-/* line 788, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 848, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order_summary {
   margin-top: 0;
 }
 
-/* line 792, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 852, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 #order p[data-hook="links"] {
   margin-left: 10px;
   overflow: auto;
 }
 
-/* line 801, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 861, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table.order-summary tbody tr td {
   width: 10%;
   text-align: center;
 }
-/* line 806, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+/* line 866, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
 table.order-summary tbody tr td:first-child a {
   text-transform: uppercase;
   font-weight: bold;
@@ -3488,147 +3601,159 @@ table.order-summary tbody tr td:first-child a {
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 827, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 887, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   .container {
     padding-left: 10px;
     width: 758px;
   }
 
-  /* line 831, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 891, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   footer#footer {
     width: 748px;
   }
 
-  /* line 834, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 894, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   p[data-hook="use_billing"] {
     margin-top: -15px;
   }
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  /* line 842, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 902, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   html {
     -webkit-text-size-adjust: none;
   }
 
-  /* line 846, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 907, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+  #order_details .steps-data div.columns,
+  #order_summary .steps-data div.columns {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 911, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+  #order_details .steps-data div.columns:first-child,
+  #order_summary .steps-data div.columns:first-child {
+    margin: 0;
+  }
+
+  /* line 916, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   nav#taxonomies {
     text-align: center;
   }
-  /* line 849, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 919, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   nav#taxonomies ul {
     padding-left: 0 !important;
     list-style: none !important;
   }
 
-  /* line 855, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 925, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   ul#nav-bar {
     text-align: center;
   }
 
-  /* line 859, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 929, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   .steps-data div.columns {
     margin-bottom: 15px;
     text-align: center;
   }
 
-  /* line 865, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 935, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #order_details table[data-hook="order_details"], #order table[data-hook="order_details"] {
     width: 100%;
   }
 
-  /* line 871, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 941, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #update-cart #subtotal, #update-cart .links {
     width: 50%;
     float: left;
     text-align: left;
   }
-  /* line 876, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 946, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #update-cart #subtotal {
     text-align: right;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 885, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 955, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   footer#footer {
     width: auto !important;
   }
 
-  /* line 889, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 959, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   input, select {
     vertical-align: baseline !important;
   }
 
-  /* line 893, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 963, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   figure#logo {
     text-align: center;
   }
 
-  /* line 897, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 967, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #link-to-login {
     display: block;
     text-align: center;
   }
 
-  /* line 902, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 972, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #search-bar {
     display: block;
     text-align: center;
   }
-  /* line 906, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 976, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #search-bar select {
     margin-bottom: 10px;
   }
 
-  /* line 911, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 981, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   ul#products {
     margin-left: 0;
     margin-right: -20px;
   }
-  /* line 915, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 985, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   ul#products li {
     width: 133px;
     margin-right: 10px;
   }
 
-  /* line 924, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 994, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_description"], table#cart-detail tbody tr td[data-hook="order_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] {
     font-size: 11px;
     line-height: 15px;
     width: 100px;
   }
-  /* line 929, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 999, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_description"] h4, table#cart-detail tbody tr td[data-hook="order_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] h4 {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 10px;
   }
-  /* line 936, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1006, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_price"], table#cart-detail tbody tr td[data-hook="cart_item_total"],
   table#cart-detail tbody tr td[data-hook="order_item_price"], table#cart-detail tbody tr td[data-hook="order_item_total"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_price"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_total"], table[data-hook="order_details"] tbody tr td[data-hook="order_item_price"], table[data-hook="order_details"] tbody tr td[data-hook="order_item_total"] {
     font-size: 12px !important;
   }
-  /* line 940, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1010, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_image"] img, table#cart-detail tbody tr td[data-hook="order_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="order_item_image"] img {
     width: 70px;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  /* line 954, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1024, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   .progress-steps li {
     padding: 0;
     margin: 0;
     width: 50%;
   }
-  /* line 959, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1029, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   .progress-steps li span {
     display: block;
     padding: 10px 20px;
   }
 
-  /* line 965, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1035, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #shipping_method p label {
     float: none;
     display: block;
@@ -3636,42 +3761,42 @@ table.order-summary tbody tr td:first-child a {
     margin-right: 0;
   }
 
-  /* line 972, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1042, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   p[data-hook="use_billing"] {
     float: none;
     margin-top: 0;
   }
 
-  /* line 980, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1050, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_description"], table#cart-detail tbody tr td[data-hook="order_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] {
     padding: 0 !important;
     text-indent: -9999px;
   }
-  /* line 984, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1054, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_description"] h4, table#cart-detail tbody tr td[data-hook="order_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] h4 {
     display: none;
   }
-  /* line 989, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1059, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_image"] img, table#cart-detail tbody tr td[data-hook="order_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="order_item_image"] img {
     width: 70px;
   }
-  /* line 993, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1063, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table#cart-detail tbody tr td[data-hook="cart_item_price"], table#cart-detail tbody tr td[data-hook="cart_item_total"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_price"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_total"] {
     font-size: 14px !important;
   }
 
-  /* line 1000, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1070, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table.order-summary {
     display: block;
     position: relative;
     width: 100%;
   }
-  /* line 1003, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1073, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table.order-summary thead {
     display: block;
     float: left;
   }
-  /* line 1004, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1074, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table.order-summary tbody {
     display: block;
     width: auto;
@@ -3679,84 +3804,88 @@ table.order-summary tbody tr td:first-child a {
     overflow-x: auto;
     white-space: nowrap;
   }
-  /* line 1005, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1075, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table.order-summary thead tr {
     display: block;
   }
-  /* line 1006, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1076, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table.order-summary th {
     display: block;
   }
-  /* line 1007, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1077, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table.order-summary tbody tr {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 1008, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1078, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   table.order-summary td {
     display: block;
     min-height: 1.25em;
   }
 
-  /* line 1012, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1082, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   figure#logo {
     text-align: center;
   }
 
-  /* line 1016, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1086, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #link-to-login {
     display: block;
     text-align: center;
   }
 
-  /* line 1021, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1091, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #search-bar {
     display: block;
     text-align: center;
   }
-  /* line 1025, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1095, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #search-bar select {
     margin-bottom: 10px;
   }
 
-  /* line 1030, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1100, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   aside#sidebar {
     text-align: center;
   }
-  /* line 1033, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1103, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   aside#sidebar ul {
     padding-left: 0 !important;
   }
-  /* line 1036, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1106, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   aside#sidebar ul li {
     list-style-type: none;
   }
 
-  /* line 1042, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
-  ul#products {
-    margin-left: 0;
-  }
-  /* line 1045, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1114, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   ul#products li {
-    width: 140px;
+    width: 142px;
     margin-right: 15px;
   }
+  /* line 1118, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
+  ul#products li.secondary, ul#products li.omega {
+    margin-right: 0;
+  }
 
-  /* line 1051, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
+  /* line 1126, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/spree_core-1.1.2.rc1/app/assets/stylesheets/store/screen.css.scss */
   #content {
     text-align: center;
   }
 }
 /*
 * This is a manifest file that includes stylesheets for spree_core  
+
+
+
+
 */
 /*
+
 */
 
 /*
-*/
 
-/*
+
 */
 
 /*
@@ -3766,18 +3895,25 @@ table.order-summary tbody tr td:first-child a {
  *
 
 
+
+
+
+
+
+
+
 */
 
-/* line 1, /Users/Chris/sisbro/app/assets/stylesheets/store/pin_it_button.css.sass */
+/* line 1, ../../../app/assets/stylesheets/store/pin_it_button.css.sass */
 iframe[src*='pinit.html'] {
   margin-top: 4px;
 }
 
-/* line 5, /Users/Chris/sisbro/app/assets/stylesheets/store/pin_it_button.css.sass */
+/* line 5, ../../../app/assets/stylesheets/store/pin_it_button.css.sass */
 [data-hook='products_list_item'] iframe[src*='pinit.html'] {
   float: left;
 }
-/* line 8, /Users/Chris/sisbro/app/assets/stylesheets/store/pin_it_button.css.sass */
+/* line 8, ../../../app/assets/stylesheets/store/pin_it_button.css.sass */
 [data-hook='products_list_item'] span.price {
   float: right;
 }
@@ -3809,7 +3945,6 @@ input[type="week"]:focus {
 nav #main-nav-bar li#link-to-cart:hover {
   border-color: #74A629;
 }
-/* line 292, /Users/Chris/.rvm/gems/ruby-1.9.3-p0@spree/gems/spree_core-1.0.0/app/assets/stylesheets/store/screen.css.scss */
 nav #main-nav-bar li#link-to-cart:hover .amount {
   border-color: #74A629;
 }
@@ -3841,7 +3976,7 @@ a {
   color: #005CAA;
 }
 a:hover {
-  color: #005CAA !important;
+  color: #005CAA;
   text-decoration: underline;
 }
 span.price {
@@ -3853,9 +3988,14 @@ ul#products li .price {
 #wrapper h1, #wrapper h2, .product-section-title, .price .selling {
   color: #74A629;
 }
+#nav-bar a {
+  font-size: 10px;
+  font-weight: normal;
+  color:#996633;
+}
 nav#top-nav-bar ul li a {
   font-weight: normal;
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 #nav-bar a:hover {
@@ -4077,16 +4217,153 @@ a.button.large {
 #wishlist-form {
   margin-top:8px;
 }
+#wishlist-link {
+  font-weight:normal !important;
+}
 .right {
   float: right;
 }
-#wishlist-link a {
-  font-size:12px;
-}
 #products iframe {
-  opacity:0.55;
+  opacity:0.65;
 }
 #products iframe:hover {
   opacity:1;
 }
+
+#nav-bar a{
+  font-size: 20px;
+  font-weight: normal;
+  color:white;
+}
+#minicart-details a {
+  font-size: 40px;
+  font-weight: normal;
+  color: #74A629 !imporant;
+}
+.delete, .cart {
+  color: black !important;
+  text-transform:none !important;
+}
+#home-link, #wishlist-link {
+  position: relative;
+  right: -16px;
+  top: -3px;
+}
 #wishlist_header h1, #wishlist_header div { float: left; width: 100%; }
+/*
+
+*/
+
+#progress {
+  display:none;
+  z-index: 99;
+  top: 0px;
+  text-align: center;
+  background: #00ADEE;
+  padding: 4px 10px;
+  color: white;
+  margin: 0 auto;
+  position: fixed;
+  left:50%;
+}
+
+nav #main-nav-bar li#link-to-cart #minicart a{
+  font-size: 12px
+}
+
+nav #main-nav-bar li#link-to-cart #minicart a.button{
+  font-size: 12px;
+  color: white !important;
+}
+
+ul#minicart-items {
+  margin: 0 10px;
+}
+
+
+ul#minicart-items li{
+  width: 90px;
+  position: relative;
+  float: left;
+  min-height: 100px;
+  padding: 7px 10px 0;
+  text-align: center;
+  text-transform: none;
+}
+
+#minicart {
+  background-color:white;
+  z-index: 100;
+  position: absolute;
+  right: -13px;
+  top: 76px;
+  padding: 10px;
+  float:right;
+  display: none;
+  width: 300px;
+  -webkit-border-radius: 10px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 10px;
+  -moz-border-radius-topright: 0;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border: 5px solid #74A629;
+}
+ul#minicart-items li img{
+  display: block;
+  margin-left: 20px;
+}
+#minicart-top-tab {
+  border: 5px solid #74A629;
+  border-bottom: 0; 
+  border-color:#74A629;
+  color: #74A629; 
+  background: white;
+  text-transform:none;
+  display: inline-block;
+  height: 30px; 
+  width: 90px; 
+  font-size: 15px;
+  text-align:center;
+  position: absolute; 
+  top: -45px; right: -15px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#minicart div#minicart-details a.button.checkout{
+  float:right;
+}
+
+#link-to-cart span.amount {
+  display: none;
+}
+#minicart .minicart-actions {
+  display: none;
+}
+#minicart-items span a {
+  color: black !important;
+}
+.mini-cart-subtotal {
+  font-size: 14px !important;
+  font-weight: bolder !important;
+}
+a.full {
+  position:absolute;
+  right: 2px;
+  top: 56px;
+  z-index:3000 !important;
+}
+.minicart-continue-button {
+  padding:8px !important;
+}
+#checkout-link {
+  padding: 14px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}

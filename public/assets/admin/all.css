@@ -1,59 +1,59 @@
 #popup_container {
-	font-family: Arial, sans-serif;
-	font-size: 12px;
-	min-width: 300px; /* Dialog will be no smaller than this */
-	max-width: 600px; /* Dialog will wrap after this width */
-	background: #FFF;
-	border: solid 5px #999;
-	color: #000;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  min-width: 300px; /* Dialog will be no smaller than this */
+  max-width: 600px; /* Dialog will wrap after this width */
+  background: #FFF;
+  border: solid 5px #999;
+  color: #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 #popup_title {
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 1.75em;
-	color: #666;
-	background: #CCC url(images/title.gif) top repeat-x;
-	border: solid 1px #FFF;
-	border-bottom: solid 1px #999;
-	cursor: default;
-	padding: 0em;
-	margin: 0em;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.75em;
+  color: #666;
+  background: #CCC url(/assets/jquery.alerts/images/title.gif) top repeat-x;
+  border: solid 1px #FFF;
+  border-bottom: solid 1px #999;
+  cursor: default;
+  padding: 0em;
+  margin: 0em;
 }
 
 #popup_content {
-	background: 16px 16px no-repeat url(images/info.gif);
-	padding: 1em 1.75em;
-	margin: 0em;
+  background: 16px 16px no-repeat url(/assets/jquery.alerts/images/info.gif);
+  padding: 1em 1.75em;
+  margin: 0em;
 }
 
 #popup_content.alert {
-	background-image: url(images/info.gif);
+  background-image: url(/assets/jquery.alerts/images/info.gif);
 }
 
 #popup_content.confirm {
-	background-image: url(images/important.gif);
+  background-image: url(/assets/jquery.alerts/images/important.gif);
 }
 
 #popup_content.prompt {
-	background-image: url(images/help.gif);
+  background-image: url(/assets/jquery.alerts/images/help.gif);
 }
 
 #popup_message {
-	padding-left: 48px;
+  padding-left: 48px;
 }
 
 #popup_panel {
-	text-align: center;
-	margin: 1em 0em 0em 1em;
+  text-align: center;
+  margin: 1em 0em 0em 1em;
 }
 
 #popup_prompt {
-	margin: .5em 0em;
+  margin: .5em 0em;
 }
 /* Spree Custom dialog styles */
 #popup_container.spree {
@@ -749,7 +749,7 @@ li.token-input-token, div.token-input-dropdown ul li.token-input-selected-dropdo
 ----------------------------------*/
 
 /* states and images */
-.ui-icon { width: 16px; height: 16px; background-image: url(jquery-ui/ui-icons_ff0084_256x240.png); }
+.ui-icon { width: 16px; height: 16px; background-image: url(/assets/jquery-ui/ui-icons_ff0084_256x240.png); }
 .ui-widget-content .ui-icon {background-image: url(/assets/jquery-ui/ui-icons_ff0084_256x240.png); }
 .ui-widget-header .ui-icon {background-image: url(/assets/jquery-ui/ui-icons_0073ea_256x240.png); }
 .ui-state-default .ui-icon { background-image: url(/assets/jquery-ui/ui-icons_666666_256x240.png); }
@@ -1493,23 +1493,13 @@ div#calculator-settings-warning, .warning {
   padding-right:10px;
 }
 
-ul#shipping-specs {
+ul#shipping_specs {
   margin: 0;
   padding-bottom:10px;
 }
-ul#shipping-specs li {
+ul#shipping_specs li {
   list-style-image:none;
   display:inline;
-}
-
-.product-scopes ul > li {
-  float: left;
-  width: 220px;
-  margin-right: 20px;
-}
-
-.product-scopes .invalid {
-  background-color: red;
 }
 
 div.product-preview-products {
@@ -1553,50 +1543,29 @@ div.product-preview-products {
   padding-left:10px;
 }
 
-
-
-
-
-
-
-/* Product Groups */
-
-table#product_scopes tr {
-  background-color: #eee;
-
+.product-prototype-options,
+.product-prototype-options ul {
+  list-style-type: none;
+  margin-left: 0;
 }
-table#product_scopes tr td {
-  border-top: 4px solid #fff;
-  border-bottom: 1px solid #bbb;
-  padding: 5px 10px;
-}
-table#product_scopes tr td.actions {
-  vertical-align: middle;
-  text-align: right;
-}
-table#product_scopes tr td table {
-  margin: 0;
+.product-prototype-options > li {
+  display: block;
+  float: left;
   width: auto;
 }
-table#product_scopes tr td table tr td {
-  padding: 0;
-  border:  none;
-  padding-right: 5px;
+.product-prototype-options > li b {
+  display: block;
+  padding-right: 30px;
+  margin-right: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
 }
-
-#product_group_forms_container {
-  position: relative;
+.product-prototype-options > li ul {
+  padding: 5px 0;
 }
-#new_product_group_form {
-  position: absolute;
-  right: 25px;
-  bottom: 0;
+.product-prototype-options > li label {
+  padding-left: 5px;
 }
-#new_product_group_form p {
-  text-align: right;
-  margin: 0;
-}
-
 
 span.handle{
   background-image: url(/assets/admin/icons/switch.png);
@@ -1614,7 +1583,9 @@ span.handle{
   border: 1px solid #000;
 }
 
-.ac_results li h4 { width: 100% }
+.ac_results li div { max-width: 90%; }
+
+.ac_results li h4 { width: 100%; }
 
 .ac_results li:last-child { border: none; }
 
@@ -1701,16 +1672,39 @@ span.handle{
   float: right;
   margin-right: 25px;
 }
+
+/* Image Settings Styles */
+#s3_settings {
+  display: none;
+}
+#styles_list {
+  list-style: none;
+}
+#headers_list {
+  list-style: none;
+}
+#s3_settings label, #attachment_styles label {
+  padding-left: 3px;
+  padding-right: 5px;
+}
 /*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+
+
+
+
+
+
+
+
 */
 
 /*
-*/
 
-/*
 */
 
 .promotion_rule, .promotion_action {
@@ -1758,6 +1752,9 @@ span.handle{
   bottom: 20px;
 }
 /*
+
+
+
 */
 
 /*
@@ -1765,6 +1762,13 @@ span.handle{
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *
+
+
+
+
+
+
+
 
 
 */
@@ -1808,15 +1812,38 @@ form div.left {
   color
 }
 /*
-*/
-
-/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *
+
 */
 
 
 form.edit_product div.left { width: 67%; }
 form.edit_product div.right { width: 30%; }
+/*
+
+*/
+
+ul.products_ul {
+  list-type: none;
+  margin-left: 20px;
+  border: 1px solid #CCC;
+}
+
+.products_ul li {
+  border: 1px solid #DDD;
+  background-color: #F9F9F9;
+  list-style: none;
+  margin-left: 0;
+  padding: 3px;
+}
+
+.products_ul li .handle {
+  display: inline-block;
+  color: silver;
+  width: 1.5em;
+  cursor: row-resize;
+  text-align: center;
+}
