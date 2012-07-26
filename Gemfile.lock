@@ -16,14 +16,6 @@ GIT
       spree_editor (>= 0.50.0)
 
 GIT
-  remote: git@github.com:fabien/spree_contact_us.git
-  revision: c38ceba7709e661d44a36c83a1f2c2eea7a8bdf5
-  branch: spree-1-1-x
-  specs:
-    spree_contact_us (1.0.1)
-      spree_core (~> 1.1.0)
-
-GIT
   remote: git@github.com:railsdog/deface.git
   revision: f22a7cc5e4d6708c26902446b124c22a0b56e57a
   specs:
@@ -406,7 +398,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.0)
   spree (= 1.1.2.rc1)
   spree_analytics!
-  spree_contact_us!
   spree_editor!
   spree_email_to_friend!
   spree_faq!

@@ -57,9 +57,6 @@ gem 'spree_snippets'         , :git    => 'git@github.com:fabien/spree-snippets.
 
 gem 'spree_faq'              , :git    => 'git@github.com:fabien/spree-faq.git', 
                                :branch => 'spree-1-1-x'
-                            
-gem 'spree_contact_us'       , :git     => 'git@github.com:fabien/spree_contact_us.git',
-                               :branch  => 'spree-1-1-x'
 
 gem 'spree_static_content'   , :git    => 'git@github.com:spree/spree_static_content.git',
                                :branch => '1-1-stable'
