@@ -21,22 +21,6 @@ set :use_sudo,    false
 default_run_options[:pty] = true
 set :ssh_options, { :forward_agent => true }
 
-set :shared_assets, %w{public/images/products}
-
-namespace :assets  do
-  namespace :symlinks do
-    desc "Setup application symlinks for shared assets"
-    task :setup, :roles => [:app, :web] do
-      shared_assets.each { |link| run "mkdir -p #{shared_path}/#{link}" }
-    end
-
-    desc "Link assets for current deploy to the shared location"
-    task :update, :roles => [:app, :web] do
-      shared_assets.each { |link| run "ln -nfs #{shared_path}/#{link} #{release_path}/#{link}" }
-    end
-  end
-end
-
 namespace :foreman do
   desc "Export the Procfile to Ubuntu's upstart scripts"
   task :export, :roles => :app do
@@ -66,6 +50,29 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/Procfile #{release_path}/Procfile"
     run "ln -nfs #{shared_path}/config/.foreman #{release_path}/.foreman"
   end
+  
+  task :ln_assets do
+    run <<-CMD
+      rm -rf #{latest_release}/public/assets &&
+      mkdir -p #{shared_path}/assets &&
+      ln -s #{shared_path}/assets #{latest_release}/public/assets
+    CMD
+  end
+  
+  task :assets do
+    update_code
+    ln_assets
+  
+    run_locally "rake assets:precompile"
+    run_locally "cd public; tar -zcvf assets.tar.gz assets"
+    top.upload "public/assets.tar.gz", "#{shared_path}", :via => :scp
+    run "cd #{shared_path}; tar -zxvf assets.tar.gz"
+    run_locally "rm public/assets.tar.gz"
+    run_locally "rm -rf public/assets"
+  
+    create_symlink
+    restart
+  end
 end
 
 namespace :db do
@@ -83,10 +90,3 @@ after 'deploy:start', 'foreman:start'
 before 'deploy:restart', 'foreman:export'
 after 'deploy:restart', 'foreman:restart'
 
-before "deploy:setup" do
-  assets.symlinks.setup
-end
-
-before "deploy:symlink" do
-  assets.symlinks.update
-end
