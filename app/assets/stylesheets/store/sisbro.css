@@ -324,9 +324,9 @@ a.button.large {
 nav #main-nav-bar {
   text-transform: uppercase;
   font-weight: normal;
-  margin-top: -11px;
+  margin-top: -10px;
   border-bottom: none !important;
-  margin-right: -16px;
+  margin-right: 14px !important;
   padding-bottom: 6px;
   float: right;
 }
