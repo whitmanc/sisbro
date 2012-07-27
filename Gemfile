@@ -66,6 +66,9 @@ gem 'spree_static_content'   , :git    => 'git@github.com:spree/spree_static_con
                                :branch => '1-1-stable'
  
 # gem 'spree_additional_calculators', :path => 'vendor/extensions/spree-additional-calculators'
+# gem 'spree_additional_calculators', :git    => 'git@github.com:whitmanc/spree-additional-calculators'
+
+# gem 'spree_gateways'      , :git    => 'git@github.com:spree/spree_gateways'
                             
                             
 
