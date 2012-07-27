@@ -115,7 +115,7 @@ GIT
 
 GIT
   remote: git@github.com:whitmanc/spree_sisbro_calculators
-  revision: f50ae856d431c7d69a69ca8f39c4fb18f25ee35f
+  revision: ac1aeaddb0af919d691a6d7cd498f6c9e8fe37ee
   specs:
     spree_additional_calculators (0.1.1)
       spree_core (>= 0.50.2)
