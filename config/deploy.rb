@@ -51,6 +51,10 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/.foreman #{release_path}/.foreman"
   end
   
+  task :precompile, :role => :app do  
+    run "cd #{release_path}/ && rake assets:precompile"  
+  end  
+  
   #
   # TODO: Implement this performance boost! assets:precompile is s.l.o.w.
   #
@@ -81,3 +85,5 @@ after 'deploy:start', 'foreman:start'
 
 before 'deploy:restart', 'foreman:export'
 after 'deploy:restart', 'foreman:restart'
+
+after "deploy:finalize_update", "deploy:precompile"
