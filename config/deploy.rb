@@ -61,6 +61,8 @@ end
 
 after "deploy:finalize_update", "db:db_config"
 
+after "deploy:update_code", "deploy:migrate"
+
 before 'deploy:assets:precompile', 'deploy:symlink_shared'
 
 before 'deploy:start', 'foreman:export'
