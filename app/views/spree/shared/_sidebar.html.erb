@@ -1,0 +1,39 @@
+<div id="taxonomies" class="sidebar-item">
+  <% taxonomy = t %>
+  <ul class="navigation-list first-nav">
+    <% Spree::Taxonomy.first.root.children.count do |taxon| %>
+      <% if taxon.name != "homepage" %>
+       
+        <li<%= ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>>
+          <%= link_to taxon.name, seo_url(taxon), :class => 'root no-margin-left no-padding-left' %>
+        </li>
+        
+        <% taxon.products.active.each do |p| %>
+          <ul class="navigation-list no-margin-left">
+           
+              <% if p.has_stock? %>
+                <li id="product_<%= p.id %>">
+                  <%= link_to p.name
+                                 .gsub(": The Movie", "")
+                                 .gsub(" Curriculum Guide","")
+                                 .gsub(" board book","")
+                                 .gsub(" book","")
+                                 .gsub(": Soundtrack & Read Along","")
+                                 .gsub(" with Remarque Poster","")
+                                 .gsub(" Soundtrack", "")
+                                 .gsub(" Plush", "")
+                                 .gsub(" The Movie", "")
+                                 .gsub(" Greeting Cards", "")
+                                 .gsub(" Board Book", "").gsub(" DVD", "")
+                                 .gsub(" Book", "")
+                                 .gsub("Poster", ""), p %>
+                </li>          
+              <% end %>
+
+          </ul>
+        <% end %>
+
+      <% end %>
+    <% end %>
+  </ul>
+</div>

@@ -45,6 +45,13 @@ GIT
       tinymce-rails (>= 3.4.7.0.1)
 
 GIT
+  remote: git@github.com:spree/spree_gateway
+  revision: f63f74a015ef84838b33ddb480104b2de4168d71
+  specs:
+    spree_gateway (1.0.0)
+      spree_core (~> 1.0)
+
+GIT
   remote: git@github.com:spree/spree_print_invoice.git
   revision: d128f87f49118620a8d3f9bea720824e21ccbc24
   specs:
@@ -105,6 +112,13 @@ GIT
   specs:
     spree_related_products (3.2)
       spree_core (>= 1.0.0)
+
+GIT
+  remote: git@github.com:whitmanc/spree_sisbro_calculators
+  revision: c9dabc26d013653a23d8210610a8fed85be9139e
+  specs:
+    spree_additional_calculators (0.1.1)
+      spree_core (>= 0.50.2)
 
 GIT
   remote: git@github.com:whitmanc/spree_wishlist.git
@@ -418,11 +432,13 @@ DEPENDENCIES
   rspec-rails (>= 2.0.1)
   sass-rails (~> 3.2.0)
   spree (= 1.1.2.rc1)
+  spree_additional_calculators!
   spree_analytics!
   spree_dynamic_sitemaps!
   spree_editor!
   spree_email_to_friend!
   spree_faq!
+  spree_gateway!
   spree_minicart!
   spree_pinterest!
   spree_print_invoice!

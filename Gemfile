@@ -26,49 +26,48 @@ group :production do
   gem 'therubyracer'
 end
 
-gem 'spree'                  , '1.1.2.rc1'
-
-gem 'tinymce-rails'          , '>= 3.4.7.0.1'
-
-gem "recaptcha"              , :require => "recaptcha/rails"
-
-gem 'deface'                 , :git    => 'git@github.com:railsdog/deface.git'
-                                      
-gem 'spree_pinterest'        , :git    => 'git@github.com:whitmanc/spree_pinterest.git'
-
-gem 'spree_wishlist'         , :git    => 'git@github.com:whitmanc/spree_wishlist.git'
-                                 
-gem 'spree_minicart'         , :git    => 'git@github.com:whitmanc/spree_minicart.git'
-                                  
-gem 'spree_analytics'        , :git    => 'git@github.com:spree/spree_analytics.git'
+gem 'spree'                   , '1.1.2.rc1'
+                              
+gem 'tinymce-rails'           , '>= 3.4.7.0.1'
+                              
+gem "recaptcha"               , :require => "recaptcha/rails"
+                              
+gem 'deface'                  , :git    => 'git@github.com:railsdog/deface.git'
                                        
-gem 'spree_editor'           , :git    => 'git@github.com:spree/spree_editor.git'
-
-gem 'spree_product_sort'     , :git    => 'git@github.com:whitmanc/spree_product_sort.git'
-   
-gem 'spree_email_to_friend'  , :git    => 'git@github.com:whitmanc/spree_email_to_friend.git'
-  
-gem 'spree_related_products' , :git    => 'git@github.com:whitmanc/spree_related_products.git'
-  
-gem 'spree_recently_viewed'  , :git    => 'git@github.com:whitmanc/spree_recently_viewed.git'
- 
-gem 'spree_print_invoice'    , :git    => 'git@github.com:spree/spree_print_invoice.git'
-
-gem 'spree_dynamic_sitemaps' , :git    => 'git@github.com:romul/spree_dynamic_sitemaps.git'
-                                     
-gem 'spree_snippets'         , :git    => 'git@github.com:fabien/spree-snippets.git', 
-                               :branch => 'spree-1-1-x'
-
-gem 'spree_faq'              , :git    => 'git@github.com:fabien/spree-faq.git', 
-                               :branch => 'spree-1-1-x'
-
-gem 'spree_static_content'   , :git    => 'git@github.com:spree/spree_static_content.git',
+gem 'spree_pinterest'         , :git    => 'git@github.com:whitmanc/spree_pinterest.git'
+                              
+gem 'spree_wishlist'          , :git    => 'git@github.com:whitmanc/spree_wishlist.git'
+                                  
+gem 'spree_minicart'          , :git    => 'git@github.com:whitmanc/spree_minicart.git'
+                                   
+gem 'spree_analytics'         , :git    => 'git@github.com:spree/spree_analytics.git'
+                                        
+gem 'spree_editor'            , :git    => 'git@github.com:spree/spree_editor.git'
+                              
+gem 'spree_product_sort'      , :git    => 'git@github.com:whitmanc/spree_product_sort.git'
+                              
+gem 'spree_email_to_friend'   , :git    => 'git@github.com:whitmanc/spree_email_to_friend.git'
+                              
+gem 'spree_related_products'  , :git    => 'git@github.com:whitmanc/spree_related_products.git'
+                              
+gem 'spree_recently_viewed'   , :git    => 'git@github.com:whitmanc/spree_recently_viewed.git'
+                              
+gem 'spree_print_invoice'     , :git    => 'git@github.com:spree/spree_print_invoice.git'
+                              
+gem 'spree_dynamic_sitemaps'  , :git    => 'git@github.com:romul/spree_dynamic_sitemaps.git'
+                                      
+gem 'spree_snippets'          , :git    => 'git@github.com:fabien/spree-snippets.git', 
+                                :branch => 'spree-1-1-x'
+                              
+gem 'spree_faq'               , :git    => 'git@github.com:fabien/spree-faq.git', 
+                                :branch => 'spree-1-1-x'
+                              
+gem 'spree_static_content'    , :git    => 'git@github.com:spree/spree_static_content.git',
                                :branch => '1-1-stable'
- 
-# gem 'spree_additional_calculators', :path => 'vendor/extensions/spree-additional-calculators'
-# gem 'spree_additional_calculators', :git    => 'git@github.com:whitmanc/spree-additional-calculators'
 
-# gem 'spree_gateways'      , :git    => 'git@github.com:spree/spree_gateways'
+gem 'spree_gateway'           , :git    => 'git@github.com:spree/spree_gateway'
+
+gem 'spree_additional_calculators', :git    => 'git@github.com:whitmanc/spree_sisbro_calculators'
                             
                             
 
