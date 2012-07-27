@@ -60,7 +60,7 @@ gem 'spree_snippets'          , :git    => 'git@github.com:fabien/spree-snippets
                                 :branch => 'spree-1-1-x'
                               
 gem 'spree_static_content'    , :git    => 'git@github.com:spree/spree_static_content.git',
-                               :branch => '1-1-stable'
+                                :branch => '1-1-stable'
 
 gem 'spree_gateway'           , :git    => 'git@github.com:spree/spree_gateway'
 
