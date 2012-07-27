@@ -10,5 +10,4 @@
 //= require admin/spree_promo
 
 //= require_tree .
-//= require admin/spree_editor
 //= require admin/spree_product_sort
