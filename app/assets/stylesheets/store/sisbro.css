@@ -172,6 +172,7 @@ input[type="submit"], input[type="button"], input[type="reset"], button, a.butto
 }
 ul#products li {
   margin-bottom: 15px;
+  width: 210px;
 }
 /* Related Products Image Scroller */
 .amazon_scroller{
@@ -343,4 +344,13 @@ td.cart-item-image {
 }
 td.cart-item-price, td.cart-item-quantity, td.cart-item-total {
   text-align: center;
+}
+ul#main-nav-bar.inline {
+  margin-right: 25px;
+}
+li#link-to-cart a {
+  color: white;
+}
+#link-to-cart .full {
+  color: white;
 }
