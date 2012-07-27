@@ -59,7 +59,6 @@ namespace :db do
   end
 end
 
-
 before 'deploy:assets:precompile', 'deploy:symlink_shared'
 
 before 'deploy:start', 'foreman:export'
