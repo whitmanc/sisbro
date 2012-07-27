@@ -53,11 +53,10 @@ gem 'spree_recently_viewed'   , :git    => 'git@github.com:whitmanc/spree_recent
 gem 'spree_print_invoice'     , :git    => 'git@github.com:spree/spree_print_invoice.git'
                               
 gem 'spree_dynamic_sitemaps'  , :git    => 'git@github.com:romul/spree_dynamic_sitemaps.git'
+
+gem 'spree_faq'               , :git    => 'git@github.com:whitmanc/spree-faq.git'
                                       
 gem 'spree_snippets'          , :git    => 'git@github.com:fabien/spree-snippets.git', 
-                                :branch => 'spree-1-1-x'
-                              
-gem 'spree_faq'               , :git    => 'git@github.com:fabien/spree-faq.git', 
                                 :branch => 'spree-1-1-x'
                               
 gem 'spree_static_content'    , :git    => 'git@github.com:spree/spree_static_content.git',
