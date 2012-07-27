@@ -86,4 +86,4 @@ after 'deploy:start', 'foreman:start'
 before 'deploy:restart', 'foreman:export'
 after 'deploy:restart', 'foreman:restart'
 
-after "deploy:finalize_update", "deploy:precompile"
+before "db:db_config", "deploy:precompile"
