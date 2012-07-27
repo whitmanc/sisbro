@@ -51,6 +51,10 @@ gem 'spree_email_to_friend'  , :git    => 'git@github.com:whitmanc/spree_email_t
 gem 'spree_related_products' , :git    => 'git@github.com:whitmanc/spree_related_products.git'
   
 gem 'spree_recently_viewed'  , :git    => 'git@github.com:whitmanc/spree_recently_viewed.git'
+ 
+gem 'spree_print_invoice'    , :git    => 'git@github.com:spree/spree_print_invoice.git'
+
+gem 'spree_dynamic_sitemaps' , :git    => 'git@github.com:romul/spree_dynamic_sitemaps.git'
                                      
 gem 'spree_snippets'         , :git    => 'git@github.com:fabien/spree-snippets.git', 
                                :branch => 'spree-1-1-x'
@@ -60,12 +64,8 @@ gem 'spree_faq'              , :git    => 'git@github.com:fabien/spree-faq.git',
 
 gem 'spree_static_content'   , :git    => 'git@github.com:spree/spree_static_content.git',
                                :branch => '1-1-stable'
-
- # Coming soon to a Rails app
- # gem 'spree_print_invoice', :path => 'vendor/extensions/spree_print_invoice/'
- # gem 'spree_additional_calculators', :path => 'vendor/extensions/spree-additional-calculators'
- # gem 'spree_static_content', :git => 'git@github.com:spree/spree_static_content.git', :branch => 'master'
- # gem 'spree_dynamic_sitemaps', :git => 'git@github.com:romul/spree_dynamic_sitemaps.git'
+ 
+# gem 'spree_additional_calculators', :path => 'vendor/extensions/spree-additional-calculators'
                             
                             
 

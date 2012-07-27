@@ -24,6 +24,12 @@ GIT
       rails (~> 3.1)
 
 GIT
+  remote: git@github.com:romul/spree_dynamic_sitemaps.git
+  revision: 599fa90c6a4fb6ce86541a1ab5e3cf5444a71534
+  specs:
+    spree_dynamic_sitemaps (0.50.1)
+
+GIT
   remote: git@github.com:spree/spree_analytics.git
   revision: 079949fd0e6d9ec87eefd8e3b9c70b5aa3bf25d3
   specs:
@@ -37,6 +43,14 @@ GIT
     spree_editor (1.0.1)
       spree_core (>= 1.0.0)
       tinymce-rails (>= 3.4.7.0.1)
+
+GIT
+  remote: git@github.com:spree/spree_print_invoice.git
+  revision: d128f87f49118620a8d3f9bea720824e21ccbc24
+  specs:
+    spree_print_invoice (1.0.0)
+      prawn (= 0.8.4)
+      spree_core (~> 1.1.0)
 
 GIT
   remote: git@github.com:spree/spree_static_content.git
@@ -58,7 +72,7 @@ GIT
 
 GIT
   remote: git@github.com:whitmanc/spree_minicart.git
-  revision: 556defbec9d6a9c166f6a0f15e24522f04f74a04
+  revision: 25b3b0b51a3eb24d54a5fc45b82142ba559ea6f5
   specs:
     spree_minicart (1.1.0)
       spree_core (~> 1.1.0)
@@ -250,6 +264,13 @@ GEM
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
+    prawn (0.8.4)
+      prawn-core (>= 0.8.4, < 0.9)
+      prawn-layout (>= 0.8.4, < 0.9)
+      prawn-security (>= 0.8.4, < 0.9)
+    prawn-core (0.8.4)
+    prawn-layout (0.8.4)
+    prawn-security (0.8.4)
     rabl (0.6.5)
       activesupport (>= 2.3.14)
       multi_json (~> 1.0)
@@ -398,11 +419,13 @@ DEPENDENCIES
   sass-rails (~> 3.2.0)
   spree (= 1.1.2.rc1)
   spree_analytics!
+  spree_dynamic_sitemaps!
   spree_editor!
   spree_email_to_friend!
   spree_faq!
   spree_minicart!
   spree_pinterest!
+  spree_print_invoice!
   spree_product_sort!
   spree_recently_viewed!
   spree_related_products!

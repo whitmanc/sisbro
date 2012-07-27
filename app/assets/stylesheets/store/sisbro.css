@@ -41,8 +41,31 @@ ul#products li .product-image:hover {
   text-align: left;
   padding-left:20px;
 }
-#footer .container .eight.columns {
-  width: 430px !important;
+#footer {
+  margin: 0 15px;
+}
+
+#footer .eight {
+ width: 450px !important;
+}
+#footer-left {
+  text-align: left;
+}
+#footer-right {
+  text-align: right;
+}
+#footer-left a {
+  font-size: 11px;
+  color: #888888 !important;
+}
+#footer-left a:hover {
+  font-size: 11px;
+  color: #888888 !important;
+  text-decoration: underline;
+}
+#footer-left ul li {
+  display: inline;
+  margin-right: 6px;
 }
 .taxonomy-root {
   color: #74A629 !important; 
@@ -94,10 +117,6 @@ nav#top-nav-bar ul li a {
   border: 0px solid #FFFFFF;
   padding: 0 20px;
 }
-#footer {
-  padding: 0 20px;
-  padding-bottom: 0;
-}
 .container {
   background: #FFFFFF;
   filter: alpha(opacity=95);
@@ -109,30 +128,13 @@ nav#top-nav-bar ul li a {
   width: 167px;
 }
 .container .sixteen.columns {
-  width: 880px;
+  width: 920px;
 }
 .container .five.columns {
   width: 230px;
 }
 .two-col, .one-col{
   background: #000000;
-}
-#footer-left {
-  text-align: left;
-  padding: 33px 20px 25px 20px;
-}
-#footer-left a {
-  font-size: 11px;
-  color: #888888 !important;
-}
-#footer-left a:hover {
-  font-size: 11px;
-  color: #888888 !important;
-  text-decoration: underline;
-}
-#footer-right {
-  padding: 25px 20px 25px 20px;
-  text-align: right;
 }
 nav#taxonomies .taxonomy-root {
   color: #00ADEE;
@@ -156,9 +158,6 @@ input[type="submit"], input[type="button"], input[type="reset"], button, a.butto
 .tentwo {
   width: 500px;
 }
-.tenthree {
-  width: 500px !important;
-}
 .email_to_friend {
   font-size: 13px;
   font-weight: bold;
@@ -166,9 +165,6 @@ input[type="submit"], input[type="button"], input[type="reset"], button, a.butto
 #email_to_friend {
   font-size: 15px;
   font-weight: bold;
-}
-.container .eight.columns {
-  width: 430px;
 }
 .recently-viewed-title {
   font-size: 14px;
@@ -261,17 +257,13 @@ ul#products li {
 .progress-steps li.completed-first a , .progress-steps li.completed a {
   color:white !important;
 }
-#footer-left ul li {
-  display: inline;
-  margin-right: 6px;
-}
 #existing-customer h6, #new-customer h6, #forgot-password h6 {
   color: #74A629 !important;
 }
 #homepage-bottom-snippet {
   clear:both;
 }
-#snippet_4 {
+#snippet_4, #snippet_3 {
   clear:both;
 }
 #header-left {
@@ -325,8 +317,30 @@ a.button.large {
   color: black !important;
   text-transform:none !important;
 }
-#home-link, #wishlist-link {
-  position: relative;
-  right: -16px;
-  top: -3px;
+#top-nav-bar a {
+  font-size: 12px !important;
+}
+nav #main-nav-bar {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: -11px;
+  border-bottom: none !important;
+  margin-right: -16px;
+  padding-bottom: 6px;
+  float: right;
+}
+nav #main-nav-bar a {
+  color: white;
+}
+#empty-cart {
+  margin-top: 0 !important;
+}                          
+#line_items th {
+  text-align: left;
+}
+td.cart-item-image {
+  width: 100px;
+}
+td.cart-item-price, td.cart-item-quantity, td.cart-item-total {
+  text-align: center;
 }
