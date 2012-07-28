@@ -28,8 +28,6 @@ end
 
 gem 'spree'                   , '1.1.2.rc1'
                               
-gem 'tinymce-rails'           , '>= 3.4.7.0.1'
-                              
 gem "recaptcha"               , :require => "recaptcha/rails"
                                          
 gem 'spree_pinterest'         , :git     => 'git@github.com:whitmanc/spree_pinterest.git'
