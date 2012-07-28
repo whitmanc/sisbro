@@ -22,18 +22,6 @@ default_run_options[:pty] = true
 set :ssh_options, { :forward_agent => true }
 
 namespace :foreman do
-  
-  namespace :assets do
-      task :precompile, :roles => :web, :except => { :no_release => true } do
-        from = source.next_revision(current_revision)
-        if capture("cd #{latest_release} && #{source.local.log(from)} vendor/assets/ app/assets/ | wc -l").to_i > 0
-          run %Q{cd #{latest_release} && #{rake} RAILS_ENV=#{rails_env} #{asset_env} assets:precompile --trace}
-        else
-          logger.info "Skipping asset pre-compilation because there were no asset changes"
-        end
-    end
-  end
-      
   desc "Export the Procfile to Ubuntu's upstart scripts"
   task :export, :roles => :app do
     run "cd #{current_path} && bundle exec foreman export upstart /etc/init"
@@ -62,7 +50,6 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/Procfile #{release_path}/Procfile"
     run "ln -nfs #{shared_path}/config/.foreman #{release_path}/.foreman"
   end
-
 end
 
 namespace :db do
