@@ -31,8 +31,6 @@ gem 'spree'                   , '1.1.2.rc1'
 gem 'tinymce-rails'           , '>= 3.4.7.0.1'
                               
 gem "recaptcha"               , :require => "recaptcha/rails"
-                              
-gem 'deface'                  , :git     => 'git@github.com:railsdog/deface.git'
                                          
 gem 'spree_pinterest'         , :git     => 'git@github.com:whitmanc/spree_pinterest.git'
                                          
@@ -62,6 +60,8 @@ gem 'spree_additional_calculators', :git => 'git@github.com:whitmanc/spree_sisbr
                                          
 gem 'spree_snippets'          , :git     => 'git@github.com:fabien/spree-snippets.git', 
                                 :branch  => 'spree-1-1-x'
+                                
+gem 'deface'                  , :git     => 'git@github.com:railsdog/deface.git'
 
                             
 
