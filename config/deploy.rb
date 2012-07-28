@@ -50,13 +50,10 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/Procfile #{release_path}/Procfile"
     run "ln -nfs #{shared_path}/config/.foreman #{release_path}/.foreman"
   end
-end
-
-namespace :db do
-  desc "Copy manually uploaded database.yml into current releases config folder"
-  task :db_config, :except => { :no_release => true }, :role => :app do
-    run "cp -f /data/spree/database.yml #{release_path}/config/database.yml"
-  end
+  
+  task :precompile, :role => :app do  
+    run "cd #{release_path}/ && rake assets:precompile"  
+  end  
 end
 
 before 'deploy:assets:precompile', 'deploy:symlink_shared'
