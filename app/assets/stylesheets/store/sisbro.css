@@ -99,7 +99,7 @@ ul#products li .price {
 }
 nav#top-nav-bar ul li a {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 12px !important;
   text-transform: uppercase;
 }
 #nav-bar a:hover {
@@ -359,4 +359,9 @@ li#link-to-cart a {
   right: -410px;
   -moz-opacity: 0.00;
   opacity: 0.00;
+}
+nav #main-nav-bar li#link-to-cart a {
+  color: white !important;
+  padding-right: 0px !important;
+  font-size: 14px;
 }
