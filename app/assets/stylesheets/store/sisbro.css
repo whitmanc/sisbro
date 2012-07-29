@@ -326,7 +326,7 @@ nav #main-nav-bar {
   font-weight: normal;
   margin-top: -10px;
   border-bottom: none !important;
-  margin-right: 14px !important;
+  margin-right: 6px !important;
   padding-bottom: 6px;
   float: right;
 }
@@ -361,7 +361,18 @@ li#link-to-cart a {
   opacity: 0.00;
 }
 nav #main-nav-bar li#link-to-cart a {
-  color: white !important;
-  padding-right: 0px !important;
+  color: white;
   font-size: 14px;
+}
+nav #main-nav-bar li#link-to-cart {
+padding-right: 0px !important;
+  margin-right: 0px !important;
+}
+nav #main-nav-bar li a {
+  color: white;
+  font-size: 14px;
+}
+#link-to-cart a.full {
+  padding-right: 0;
+  margin-right: 0;
 }
