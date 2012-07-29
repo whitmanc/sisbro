@@ -1,17 +1,17 @@
 GIT
+  remote: git://github.com/ContinuityControl/tinymce-rails.git
+  revision: c0c3308a9955dd303493958766ff32e718edf41e
+  specs:
+    tinymce-rails (3.4.8)
+      railties (>= 3.1)
+
+GIT
   remote: git://github.com/spree/spree_editor.git
   revision: 9846455f5b48615a328d334e37f619ba7a571ba4
   specs:
     spree_editor (1.0.1)
       spree_core (>= 1.0.0)
       tinymce-rails (>= 3.4.7.0.1)
-
-GIT
-  remote: git://github.com/whitmanc/tinymce-rails.git
-  revision: a6967fe2d64bfce4ed22772cd4c645c5a418490c
-  specs:
-    tinymce-rails (3.5.6)
-      railties (>= 3.1.1)
 
 GIT
   remote: git@github.com:fabien/spree-snippets.git
