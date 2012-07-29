@@ -20,7 +20,7 @@ Sisbro::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
    
-  config.serve_static_assets = true
+  config.serve_static_assets = false
   
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
