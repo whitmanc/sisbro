@@ -39,7 +39,11 @@ gem 'spree_minicart'              , :git     => 'git@github.com:whitmanc/spree_m
 gem 'spree_product_sort'          , :git     => 'git@github.com:whitmanc/spree_product_sort.git'
                                              
 gem 'spree_email_to_friend'       , :git     => 'git@github.com:whitmanc/spree_email_to_friend.git'
-                                             
+
+gem 'spree_editor'                , :git     => 'git://github.com/spree/spree_editor.git'
+
+gem 'tinymce-rails', '>= 3.4.7.0.1'
+                                  
 gem 'spree_related_products'      , :git     => 'git@github.com:whitmanc/spree_related_products.git'
                                              
 gem 'spree_recently_viewed'       , :git     => 'git@github.com:whitmanc/spree_recently_viewed.git'
@@ -48,9 +52,11 @@ gem 'spree_print_invoice'         , :git     => 'git@github.com:spree/spree_prin
                                              
 gem 'spree_dynamic_sitemaps'      , :git     => 'git@github.com:romul/spree_dynamic_sitemaps.git'
                                              
+ gem 'spree_faq'                  , :git     => 'git@github.com:whitmanc/spree-faq.git'
+ 
 gem 'spree_faq'                   , :git     => 'git@github.com:whitmanc/spree-faq.git'
-                                             
-gem 'spree_static_content'        , :git     => 'git@github.com:whitmanc/spree_static_content.git'
+
+gem 'spree_static_content'        , :git     => 'git@github.com:whitmanc/spree_static_content.git', :branch => 'master'
                                   
 gem 'spree_gateway'               , :git     => 'git@github.com:spree/spree_gateway'
                                   
