@@ -42,7 +42,7 @@ gem 'spree_email_to_friend'        , :git     => 'git@github.com:whitmanc/spree_
                                    
 gem 'spree_editor'                 , :git     => 'git://github.com/spree/spree_editor.git'
                                    
-gem 'tinymce-rails'                , :git     => 'git://github.com/ContinuityControl/tinymce-rails.git'
+gem 'tinymce-rails'                , :git     => 'git://github.com/rovermicrover/tinymce-rails.git'
                                    
 gem 'spree_related_products'       , :git     => 'git@github.com:whitmanc/spree_related_products.git'
                                               
