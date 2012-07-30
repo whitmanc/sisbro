@@ -11,4 +11,4 @@
 
 //= require_tree .
 //= require admin/spree_product_sort
-//= require admin/spree_essentials
+//= require admin/spree_essentials//= require admin/spree_essential_menus

@@ -88,7 +88,7 @@ GIT
 
 GIT
   remote: git@github.com:whitmanc/spree_mp3player.git
-  revision: 1cedfeda2569ec8ccb01696fe7cf68a494f7efee
+  revision: ba9fc2cf3a29dd338ffc93c54af300bf80253c4c
   specs:
     spree_mp3player (0.60.99)
       spree_core
