@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120725115029) do
+ActiveRecord::Schema.define(:version => 20120730005216) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -28,6 +28,23 @@ ActiveRecord::Schema.define(:version => 20120725115029) do
     t.boolean  "advertise",    :default => false
     t.string   "path"
   end
+
+  create_table "spree_additional_calculator_rates", :force => true do |t|
+    t.integer  "calculator_id",                                                                :null => false
+    t.string   "calculator_type", :limit => 50,                                                :null => false
+    t.integer  "rate_type",                                                   :default => 0,   :null => false
+    t.decimal  "from_value",                    :precision => 8, :scale => 3, :default => 0.0, :null => false
+    t.decimal  "to_value",                      :precision => 8, :scale => 3, :default => 0.0, :null => false
+    t.decimal  "rate",                          :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.datetime "created_at",                                                                   :null => false
+    t.datetime "updated_at",                                                                   :null => false
+  end
+
+  add_index "spree_additional_calculator_rates", ["calculator_id"], :name => "index_spree_additional_calculator_rates_on_calculator_id"
+  add_index "spree_additional_calculator_rates", ["calculator_type"], :name => "index_spree_additional_calculator_rates_on_calculator_type"
+  add_index "spree_additional_calculator_rates", ["from_value"], :name => "index_spree_additional_calculator_rates_on_from_value"
+  add_index "spree_additional_calculator_rates", ["rate_type"], :name => "index_spree_additional_calculator_rates_on_rate_type"
+  add_index "spree_additional_calculator_rates", ["to_value"], :name => "index_spree_additional_calculator_rates_on_to_value"
 
   create_table "spree_addresses", :force => true do |t|
     t.string   "firstname"
@@ -86,11 +103,14 @@ ActiveRecord::Schema.define(:version => 20120725115029) do
 
   create_table "spree_calculators", :force => true do |t|
     t.string   "type"
-    t.integer  "calculable_id",   :null => false
-    t.string   "calculable_type", :null => false
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.integer  "calculable_id",                               :null => false
+    t.string   "calculable_type",                             :null => false
+    t.datetime "created_at",                                  :null => false
+    t.datetime "updated_at",                                  :null => false
+    t.boolean  "is_additional_calculator", :default => false
   end
+
+  add_index "spree_calculators", ["is_additional_calculator"], :name => "index_spree_calculators_on_is_additional_calculator"
 
   create_table "spree_configurations", :force => true do |t|
     t.string   "name"
@@ -100,6 +120,23 @@ ActiveRecord::Schema.define(:version => 20120725115029) do
   end
 
   add_index "spree_configurations", ["name", "type"], :name => "index_configurations_on_name_and_type"
+
+  create_table "spree_contents", :force => true do |t|
+    t.integer  "page_id"
+    t.string   "title"
+    t.text     "body"
+    t.string   "link"
+    t.string   "link_text"
+    t.string   "context"
+    t.boolean  "hide_title",              :default => false
+    t.integer  "position",                :default => 999
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+  end
 
   create_table "spree_countries", :force => true do |t|
     t.string  "iso_name"
@@ -246,24 +283,17 @@ ActiveRecord::Schema.define(:version => 20120725115029) do
 
   create_table "spree_pages", :force => true do |t|
     t.string   "title"
-    t.text     "body"
-    t.string   "slug"
-    t.datetime "created_at",                                  :null => false
-    t.datetime "updated_at",                                  :null => false
-    t.boolean  "show_in_header",           :default => false, :null => false
-    t.boolean  "show_in_footer",           :default => false, :null => false
-    t.string   "foreign_link"
-    t.integer  "position",                 :default => 1,     :null => false
-    t.boolean  "visible",                  :default => true
-    t.string   "meta_keywords"
-    t.string   "meta_description"
-    t.string   "layout"
-    t.boolean  "show_in_sidebar",          :default => false, :null => false
+    t.string   "nav_title"
+    t.string   "path"
     t.string   "meta_title"
-    t.boolean  "render_layout_as_partial", :default => false
+    t.string   "meta_description"
+    t.string   "meta_keywords"
+    t.integer  "position",         :default => 999
+    t.boolean  "accessible",       :default => true
+    t.boolean  "visible",          :default => true
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
   end
-
-  add_index "spree_pages", ["slug"], :name => "index_pages_on_slug"
 
   create_table "spree_payment_methods", :force => true do |t|
     t.string   "type"
@@ -652,6 +682,14 @@ ActiveRecord::Schema.define(:version => 20120725115029) do
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_variants_on_product_id"
+
+  create_table "spree_videos", :force => true do |t|
+    t.string   "youtube_ref"
+    t.integer  "product_id"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "spree_wished_products", :force => true do |t|
     t.integer  "variant_id"

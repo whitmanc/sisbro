@@ -15,3 +15,4 @@
 
 //= require_tree .
 //= require store/spree_wishlist
+//= require store/spree_videos
