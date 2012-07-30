@@ -26,13 +26,15 @@ group :production do
   gem 'therubyracer'
 end
 
-gem 'spree'                        , '1.1.2.rc1'
-
-gem 'spree_essential_cms'          , '~> 0.4.0'
+gem 'spree'               , '1.1.2'
+                          
+gem 'spree_essential_cms' , '~> 0.4.0'
 
 gem 'simple_captcha'
 
-gem 'spree_videos'                 , :git     => 'git://github.com/iloveitaly/Spree-Videos.git'
+gem "rmagick"
+
+gem 'spree_videos'                 , :git     => 'git@github.com:iloveitaly/Spree-Videos.git'
                                    
 gem 'spree_pinterest'              , :git     => 'git@github.com:whitmanc/spree_pinterest.git'
                                               
@@ -64,8 +66,8 @@ gem 'spree_snippets'               , :git     => 'git@github.com:fabien/spree-sn
 gem 'spree_contact_us'             , :git     => 'git@github.com:fabien/spree_contact_us.git', 
                                      :branch  => 'spree-1-1-x'
 
-gem 'spree_mp3player'              , :git     => 'git@github.com:jasonmarkperez/spree_mp3player.git'
+gem 'spree_mp3player'              , :git     => 'git@github.com:whitmanc/spree_mp3player.git'
 
 gem 'spree_essential_menus'        , :git     => 'git@github.com:matfiz/spree_essential_menus.git'
- 
+
 gem 'deface'                       , :git     => 'git@github.com:railsdog/deface.git'
