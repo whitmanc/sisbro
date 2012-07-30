@@ -30,7 +30,7 @@ gem 'spree'                        , '1.1.2.rc1'
 
 gem 'spree_essential_cms'          , '~> 0.4.0'
 
-gem "recaptcha"                    , :require => 'recaptcha/rails'
+gem 'simple_captcha'
 
 gem 'spree_videos'                 , :git     => 'git://github.com/iloveitaly/Spree-Videos.git'
                                    
@@ -61,7 +61,11 @@ gem 'spree_additional_calculators' , :git     => 'git@github.com:whitmanc/spree_
 gem 'spree_snippets'               , :git     => 'git@github.com:fabien/spree-snippets.git', 
                                      :branch  => 'spree-1-1-x'
                                      
+gem 'spree_contact_us'             , :git     => 'git@github.com:fabien/spree_contact_us.git', 
+                                     :branch  => 'spree-1-1-x'
+
+gem 'spree_mp3player'              , :git     => 'git@github.com:jasonmarkperez/spree_mp3player.git'
+
+gem 'spree_essential_menus'        , :git     => 'git@github.com:matfiz/spree_essential_menus.git'
+ 
 gem 'deface'                       , :git     => 'git@github.com:railsdog/deface.git'
-
-                            
-
