@@ -1,7 +1,9 @@
-<li id="home-link" data-hook><%= link_to t(:home), root_path %></li>
+
 <% if current_user && current_user.wishlists.present? %>
   <li id="wishlist-link" data-hook><%= link_to 'Wishlist', current_user.wishlists.where("is_default = ?", true).first %></li>
 <% else %>
   <li id="wishlist-link" data-hook><%= link_to 'Wishlist', account_path %></li>
 <% end %>
 <li id="link-to-cart" data-hook><%= link_to_cart %></li>
+<% @menu_bar = Spree::MenuBar.find_by_name("Header") %>
+<%= render :partial => "spree/shared/render_menu", :locals => {:menu_bar => @menu_bar} %>

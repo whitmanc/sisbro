@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120730120448) do
+ActiveRecord::Schema.define(:version => 20120731060432) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -251,6 +251,18 @@ ActiveRecord::Schema.define(:version => 20120730120448) do
     t.integer  "menu_image_file_size"
     t.datetime "menu_image_updated_at"
   end
+
+  create_table "spree_mp3s", :force => true do |t|
+    t.integer  "product_id"
+    t.string   "title"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  add_index "spree_mp3s", ["product_id"], :name => "index_mp3s_on_product_id"
 
   create_table "spree_option_types", :force => true do |t|
     t.string   "name",         :limit => 100

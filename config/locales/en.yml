@@ -1,6 +1,17 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
   hello: "Hello world"
   continue_shopping: "Browse Products"
+  spree:
+    admin:
+      menus:
+        explain_url: "URL of the menu item - leave blank if linking to a static content page you've created."
+        explain_visible: "Enable this menu item?"
+        parent_id: "Parent menu item"
+        page_id: "Link to static page?"
+        new_menu: "New Menu Item"
+        explain_page_id: "Select blank if URL is defined above"
+        explain_parent_id: "For sub-menus... leave blank if n/a"
+      menu_bars:
+        new_menu_bar: "New Menu Bar"

@@ -328,7 +328,8 @@ nav #main-nav-bar {
   border-bottom: none !important;
   margin-right: 6px !important;
   padding-bottom: 6px;
-  float: right;
+  float: left;
+  display: inline;
 }
 nav #main-nav-bar a {
   color: white;
@@ -375,4 +376,7 @@ nav #main-nav-bar li a {
 #link-to-cart a.full {
   padding-right: 0;
   margin-right: 0;
+}
+.menu {
+  display: inline;
 }
