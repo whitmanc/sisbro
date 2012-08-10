@@ -27,9 +27,9 @@ group :production do
 end
 
 
-gem 'spree'                        ,  '1.1.2'
+gem 'spree'                        , '1.1.2'
 
-gem 'tinymce-rails'                ,  '>= 3.4.7.0.1'
+gem 'tinymce-rails'                , '>= 3.4.7.0.1'
 
 gem 'acts_as_tree'
 
@@ -71,8 +71,6 @@ gem 'spree_snippets'               , :git     => 'git@github.com:fabien/spree-sn
 
 gem 'simple_captcha'               , :git     => 'git://github.com/greendog/simple-captcha.git'
 
-gem 'deface'                       , :git     => 'git@github.com:railsdog/deface.git'
-
 gem 'spree_editor'                 , :git     => 'git://raw.github.com/spree/spree_editor.git'
 
 gem 'spree_contact_us'             , :git     => 'git://github.com/greendog/spree_contact_us.git'
@@ -80,3 +78,5 @@ gem 'spree_contact_us'             , :git     => 'git://github.com/greendog/spre
 gem "recaptcha"                    , :require => 'recaptcha/rails'
 
 gem 'spree_product_zoom'           , :git     => 'git://github.com/spree/spree_product_zoom.git'
+
+gem 'deface'                       , :git     => 'git@github.com:railsdog/deface.git'

@@ -378,6 +378,7 @@ padding-right: 0px !important;
 nav #main-nav-bar li a {
   color: white;
   font-size: 14px;
+  padding: 7px !important;
 }
 #link-to-cart a.full {
   padding-right: 0;
@@ -416,13 +417,21 @@ nav #main-nav-bar li a {
     left: 0;
     width: 300px;
 }
-
 #sidebar_top {
     float: left;
     width: 150px;
 }
-
 ul#products li a.info {
     height: 21px !important;
     overflow: hidden;
+}
+#footer-right ul {
+    display: inline-block;
+}
+#snippet_contact_form {
+    float: right;
+    width: 550px;
+    text-align: left;
+    height: 300px;
+    position: relative;
 }
