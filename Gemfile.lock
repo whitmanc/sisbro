@@ -5,12 +5,12 @@ GIT
     simple_captcha (0.1.1)
 
 GIT
-  remote: git://github.com/sbeam/spree_contact_us.git
-  revision: bf4b63c316f05bdbc3f153a8a867a58b750f643a
+  remote: git://github.com/greendog/spree_contact_us.git
+  revision: 392ff0fbd141d464fdf4ebd694e1b09dd56e5173
   specs:
-    spree_contact_us (1.0.0)
+    spree_contact_us (1.0.1)
       recaptcha
-      spree_core (>= 1.0.0)
+      spree_core (~> 1.1.0)
 
 GIT
   remote: git://github.com/spree/spree_product_zoom.git
