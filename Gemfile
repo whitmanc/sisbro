@@ -77,4 +77,6 @@ gem 'spree_editor'                 , :git     => 'git://raw.github.com/spree/spr
 
 gem 'spree_contact_us'             , :git     => 'git://github.com/greendog/spree_contact_us.git'
 
+gem "recaptcha"                    , :require => 'recaptcha/rails'
+
 gem 'spree_product_zoom'           , :git     => 'git://github.com/spree/spree_product_zoom.git'
