@@ -380,3 +380,6 @@ nav #main-nav-bar li a {
 .menu {
   display: inline;
 }
+.product-listing li img {
+    min-height: 150px;
+}

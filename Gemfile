@@ -34,6 +34,10 @@ gem 'spree_essential_cms'          ,             '~> 0.4.0'
 
 gem 'acts_as_tree'
 
+gem 'spree_editor', :git => 'git://raw.github.com/spree/spree_editor.git'
+
+gem 'tinymce-rails', '>= 3.4.7.0.1'
+
 gem 'haml'                         , :git     => 'https://github.com/haml/haml.git',
                                      :branch  => '3-2-stable'
                                      

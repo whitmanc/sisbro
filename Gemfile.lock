@@ -5,6 +5,14 @@ GIT
     simple_captcha (0.1.1)
 
 GIT
+  remote: git://raw.github.com/spree/spree_editor.git
+  revision: 9846455f5b48615a328d334e37f619ba7a571ba4
+  specs:
+    spree_editor (1.0.1)
+      spree_core (>= 1.0.0)
+      tinymce-rails (>= 3.4.7.0.1)
+
+GIT
   remote: git@github.com:fabien/spree-snippets.git
   revision: e112b21881d99250a98bb70a8fa8e221cc7d06fb
   branch: spree-1-1-x
@@ -403,9 +411,6 @@ GEM
       httparty (~> 0.8.1)
       spree_auth (= 1.1.2)
       spree_core (= 1.1.2)
-    spree_editor (0.70.0)
-      spree_core (>= 0.70.0)
-      tinymce-rails (>= 3.4.7)
     spree_essential_cms (0.4.0)
       spree_essentials (~> 0.5.0)
     spree_essentials (0.5.0)
@@ -474,6 +479,7 @@ DEPENDENCIES
   spree (= 1.1.2)
   spree_additional_calculators!
   spree_dynamic_sitemaps!
+  spree_editor!
   spree_email_to_friend!
   spree_essential_cms (~> 0.4.0)
   spree_essential_menus!
@@ -490,5 +496,6 @@ DEPENDENCIES
   spree_videos!
   spree_wishlist!
   therubyracer
+  tinymce-rails (>= 3.4.7.0.1)
   uglifier
   unicorn
