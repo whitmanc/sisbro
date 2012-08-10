@@ -13,7 +13,7 @@
   <% reset_cycle('default') %>
   <% products.each_with_index do |product, index| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-      <li style="margin-right:15px" id="product_<%= product.id %>" class="columns three <%= cycle("alpha", "secondary", "", "omega secondary", :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+      <li style="margin-right:15px" id="product_<%= product.id %>" class="columns three" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
         <div class="product-image">
           <%= link_to large_image(product, :itemprop => "image"), product %>
         </div>
