@@ -12,9 +12,9 @@ Deface::Override.new(:virtual_path => "spree/layouts/spree_application",
 Deface::Override.new(:virtual_path => "spree/layouts/spree_application",
                      :name => "insert_snippet_at_sidebar_top",
                      :insert_top => "#sidebar",
-                     :text => "<div id='sidebar_top'><%= render_snippet 'sidebar_top' %></div><br /><br />")
+                     :text => "<div id='sidebar_top'><%= render_snippet 'sidebar_top' %></div><br />")
 
 Deface::Override.new(:virtual_path => "spree/layouts/spree_application",
                      :name => "insert_snippet_at_sidebar_bottom",
-                     :insert_top => "#sidebar",
-                     :text => "<div id='sidebar_bottom'><%= render_snippet 'sidebar_bottom' %></div><br /><br />")
+                     :insert_bottom => "#sidebar",
+                     :text => "<div id='sidebar_top'><%= render_snippet 'sidebar_bottom' %></div><br /><br />")
