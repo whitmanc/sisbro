@@ -5,14 +5,6 @@ GIT
     simple_captcha (0.1.1)
 
 GIT
-  remote: git://github.com/greendog/spree_contact_us.git
-  revision: 392ff0fbd141d464fdf4ebd694e1b09dd56e5173
-  specs:
-    spree_contact_us (1.0.1)
-      recaptcha
-      spree_core (~> 1.1.0)
-
-GIT
   remote: git://github.com/spree/spree_product_zoom.git
   revision: 2e93b4a5c2751d49c4babaf3aff4f09c538ac4be
   specs:
@@ -494,7 +486,6 @@ DEPENDENCIES
   simple_captcha!
   spree (= 1.1.2)
   spree_additional_calculators!
-  spree_contact_us!
   spree_dynamic_sitemaps!
   spree_editor!
   spree_email_to_friend!
