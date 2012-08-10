@@ -8,7 +8,7 @@ Deface::Override.new(
                             <td colspan='6' class='promo-code'>
                               <%=
                                 order_form.label :coupon_code,
-                                sanitize("If you have a <b>Coupon code</b>, please enter it here and click update", :tags => %w(b))
+                                sanitize("If you have a <span style='font-size: 19px'><b>Coupon code</b></spam>, please enter it here and click update", :tags => %w(b))
                               %>
                               <%= order_form.text_field :coupon_code %>
                             </td>
