@@ -1,6 +1,6 @@
 <%= form_for :order, :url => populate_orders_url, :remote => true do |f| %>
   <div data-hook="inside_product_cart_form" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-    <%= render 'social_buttons' %>
+
     <% if @product.has_variants? %>
       <div id="product-variants" class="columns five alpha">
         <h6 class="product-section-title"><%= t(:variants) %></h6>

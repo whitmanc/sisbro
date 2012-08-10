@@ -283,10 +283,11 @@ a.button.large {
 }
 .wishlist-button {
   font-size: 13px !important;
-  float: left !important;
-  margin-left: 73px !important;
-  width: 104px !important;
-  margin-top: 10px;
+    float: right;
+    clear:right;
+    position: relative;
+    left: -8px;
+    bottom: -20px;
 }
 #wishlist-form {
   margin-top:8px;
@@ -381,5 +382,16 @@ nav #main-nav-bar li a {
   display: inline;
 }
 .product-listing li img {
-    min-height: 150px;
+  min-height: 150px;
+}
+#cart-form {
+    width: 200px;
+    height: 145px;
+    margin-left:10px;
+}
+#add-to-cart-button {
+    font-size: 20px;
+}
+#video-player {
+    margin-top: 20px;
 }
