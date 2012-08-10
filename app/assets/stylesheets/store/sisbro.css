@@ -381,6 +381,12 @@ nav #main-nav-bar li a {
 .menu {
   display: inline;
 }
+.product-listing {
+    width: 740px;
+}
+.product-listing li{
+    margin-right: 33px;
+}
 .product-listing li img {
   min-height: 150px;
 }
