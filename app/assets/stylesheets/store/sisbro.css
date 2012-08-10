@@ -297,6 +297,8 @@ a.button.large {
 }
 #wishlist-link {
   font-weight:normal !important;
+  position: absolute;
+  right: 70px;
 }
 .right {
   float: right;
@@ -328,7 +330,7 @@ a.button.large {
 nav #main-nav-bar {
   text-transform: uppercase;
   font-weight: normal;
-  margin-top: -7px;
+  margin-top: -8px;
   border-bottom: none !important;
   margin-right: 6px !important;
   padding-bottom: 6px;
