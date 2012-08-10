@@ -69,9 +69,6 @@ gem 'spree_additional_calculators' , :git     => 'git@github.com:whitmanc/spree_
                                           
 gem 'spree_snippets'               , :git     => 'git@github.com:fabien/spree-snippets.git', 
                                      :branch  => 'spree-1-1-x'
-                                     
-gem 'spree_contact_us'             , :git     => 'git@github.com:fabien/spree_contact_us.git',
-                                     :branch  => 'spree-1-1-x'
 
 gem 'simple_captcha'               , :git     => 'git://github.com/greendog/simple-captcha.git'
 
