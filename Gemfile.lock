@@ -5,6 +5,14 @@ GIT
     simple_captcha (0.1.1)
 
 GIT
+  remote: git://github.com/greendog/spree_contact_us.git
+  revision: 392ff0fbd141d464fdf4ebd694e1b09dd56e5173
+  specs:
+    spree_contact_us (1.0.1)
+      recaptcha
+      spree_core (~> 1.1.0)
+
+GIT
   remote: git://github.com/spree/spree_product_zoom.git
   revision: 2e93b4a5c2751d49c4babaf3aff4f09c538ac4be
   specs:
@@ -143,10 +151,10 @@ GIT
 
 GIT
   remote: https://github.com/haml/haml.git
-  revision: b64d293043549cf843305364d0266fae71e91426
+  revision: 7f8c794fa8c818272a5ac7e9a6af19b4f1d7d1c3
   branch: 3-2-stable
   specs:
-    haml (3.2.0.beta.1)
+    haml (3.2.0.beta.2)
       tilt
 
 GEM
@@ -486,6 +494,7 @@ DEPENDENCIES
   simple_captcha!
   spree (= 1.1.2)
   spree_additional_calculators!
+  spree_contact_us!
   spree_dynamic_sitemaps!
   spree_editor!
   spree_email_to_friend!
