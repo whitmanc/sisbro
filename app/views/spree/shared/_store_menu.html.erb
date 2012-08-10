@@ -1,4 +1,3 @@
-
 <% if current_user && current_user.wishlists.present? %>
   <li id="wishlist-link" data-hook><%= link_to 'Wishlist', current_user.wishlists.where("is_default = ?", true).first %></li>
 <% else %>

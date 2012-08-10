@@ -32,6 +32,9 @@ nav #main-nav-bar li#link-to-cart:hover .amount {
 ul#products li .product-image:hover {
   border-color: #74A629;
 }
+ul#products li .product-image {
+    height: 190px;
+}
 #product-thumbnails li:hover, #product-thumbnails li.selected {
   border-color: #74A629;
 }
@@ -325,7 +328,7 @@ a.button.large {
 nav #main-nav-bar {
   text-transform: uppercase;
   font-weight: normal;
-  margin-top: -10px;
+  margin-top: -7px;
   border-bottom: none !important;
   margin-right: 6px !important;
   padding-bottom: 6px;
@@ -400,4 +403,19 @@ nav #main-nav-bar li a {
 }
 #video-player {
     margin-top: 20px;
+}
+#header_top_left {
+    margin-top: 10px;
+    height: 56px;
+    float: left;
+    clear: right;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 300px;
+}
+
+#sidebar_top {
+    float: left;
+    width: 150px;
 }
