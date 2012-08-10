@@ -17,3 +17,4 @@
 //= require store/spree_wishlist
 //= require store/spree_videos
 //= require store/spree_essential_menus
+//= require store/spree_product_zoom

@@ -13,6 +13,13 @@ GIT
       spree_core (>= 1.0.0)
 
 GIT
+  remote: git://github.com/spree/spree_product_zoom.git
+  revision: 2e93b4a5c2751d49c4babaf3aff4f09c538ac4be
+  specs:
+    spree_product_zoom (1.1.2)
+      spree_core (~> 1.1.2)
+
+GIT
   remote: git://raw.github.com/spree/spree_editor.git
   revision: 9846455f5b48615a328d334e37f619ba7a571ba4
   specs:
@@ -498,6 +505,7 @@ DEPENDENCIES
   spree_pinterest!
   spree_print_invoice!
   spree_product_sort!
+  spree_product_zoom!
   spree_recently_viewed!
   spree_related_products!
   spree_snippets!
