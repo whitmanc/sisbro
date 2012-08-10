@@ -421,3 +421,8 @@ nav #main-nav-bar li a {
     float: left;
     width: 150px;
 }
+
+ul#products li a.info {
+    height: 21px !important;
+    overflow: hidden;
+}
