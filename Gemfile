@@ -75,6 +75,6 @@ gem 'deface'                       , :git     => 'git@github.com:railsdog/deface
 
 gem 'spree_editor'                 , :git     => 'git://raw.github.com/spree/spree_editor.git'
 
-gem 'spree_contact_us'             , :git     => 'git://github.com/sbeam/spree_contact_us.git'
+gem 'spree_contact_us'             , :git     => 'git://github.com/greendog/spree_contact_us.git'
 
 gem 'spree_product_zoom'           , :git     => 'git://github.com/spree/spree_product_zoom.git'
