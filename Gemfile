@@ -27,7 +27,7 @@ group :production do
 end
 
 
-gem 'spree'                        , '1.1.3'
+gem 'spree'                        , '1.1.2'
 
 gem 'tinymce-rails'                , '>= 3.4.7.0.1'
 
