@@ -435,3 +435,8 @@ ul#products li a.info {
     height: 300px;
     position: relative;
 }
+ul#products li {
+    margin-bottom: 57px !important;
+    width: 210px !important;
+    height: 219px !important;
+}
