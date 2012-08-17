@@ -16,6 +16,7 @@ Spree.config do |config|
   config.products_per_page = 48
   config.admin_products_per_page = 65
   config.allow_ssl_in_production = true
+  config.auto_capture = false
 end
 
 

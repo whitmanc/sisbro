@@ -27,7 +27,7 @@ group :production do
 end
 
 
-gem 'spree'                        , '1.1.2'
+gem 'spree'                        , '1.1.3'
 
 gem 'tinymce-rails'                , '>= 3.4.7.0.1'
 
@@ -52,7 +52,7 @@ gem 'spree_product_sort'           , :git     => 'git@github.com:whitmanc/spree_
 
 gem 'spree_email_to_friend'        , :git     => 'git@github.com:whitmanc/spree_email_to_friend.git'
 
-gem 'spree_related_products'       , :git     => 'git@github.com:whitmanc/spree_related_products.git'
+gem 'spree_related_products'       , :git     => 'git@github.com:spree/spree_related_products.git'
 
 gem 'spree_recently_viewed'        , :git     => 'git@github.com:whitmanc/spree_recently_viewed.git'
 
