@@ -213,7 +213,7 @@ GEM
       builder (>= 2.0.0)
     builder (3.0.0)
     cancan (1.6.7)
-    capistrano (2.13.0)
+    capistrano (2.12.0)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -478,7 +478,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_tree
-  capistrano
+  capistrano (= 2.12.0)
   capybara (= 0.4.0)
   coffee-rails (~> 3.2.0)
   database_cleaner
