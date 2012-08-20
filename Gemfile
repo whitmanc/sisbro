@@ -15,7 +15,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem "rspec-rails", ">= 2.0.1"
   gem "capybara", "= 0.4.0"
-  gem 'capistrano', '= 2.12.0'
+  gem 'capistrano', :git => 'git://github.com/capistrano/capistrano.git'
   gem "launchy", ">= 0.3.7"
 end
 
