@@ -123,6 +123,13 @@ GIT
       spree_core (>= 1.0.0)
 
 GIT
+  remote: git@github.com:whitmanc/spree_product_sort.git
+  revision: c9810487c3c1f0969ca10e640ac70692b9db6058
+  specs:
+    spree_product_sort (1.0.0)
+      spree_core (>= 0.60.0)
+
+GIT
   remote: git@github.com:whitmanc/spree_recently_viewed.git
   revision: 94e9b2a44bc34eb3d54ec0f6b72b44df3219acb7
   specs:
@@ -150,12 +157,6 @@ GIT
   specs:
     haml (3.2.0.beta.3)
       tilt
-
-PATH
-  remote: /Users/chriswhitman/Desktop/spree_product_sort
-  specs:
-    spree_product_sort (1.0.0)
-      spree_core (>= 0.60.0)
 
 GEM
   remote: http://rubygems.org/
