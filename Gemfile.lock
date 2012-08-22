@@ -124,7 +124,7 @@ GIT
 
 GIT
   remote: git@github.com:whitmanc/spree_product_sort.git
-  revision: 8941e067da24f3deb987a4ae8c7d842c5a3a69d1
+  revision: c9810487c3c1f0969ca10e640ac70692b9db6058
   specs:
     spree_product_sort (1.0.0)
       spree_core (>= 0.60.0)
