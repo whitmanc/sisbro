@@ -1,6 +1,7 @@
 <%
   paginated_products = @searcher.retrieve_products if params.key?(:keywords)
   paginated_products ||= products
+  products = products.includes(:product_taxons).order("#{Spree::ProductTaxon.quoted_table_name}.position")
 %>
 <% if products.empty? %>
   <%= t(:no_products_found) %>
