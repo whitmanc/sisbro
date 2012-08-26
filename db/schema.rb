@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120731060432) do
+ActiveRecord::Schema.define(:version => 20120826180434) do
 
   create_table "pages", :force => true do |t|
     t.string   "title"
@@ -430,6 +430,8 @@ ActiveRecord::Schema.define(:version => 20120731060432) do
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
     t.integer  "count_on_hand",        :default => 0,  :null => false
+    t.boolean  "is_external"
+    t.string   "external_url"
   end
 
   add_index "spree_products", ["available_on"], :name => "index_products_on_available_on"
