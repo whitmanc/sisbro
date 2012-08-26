@@ -39,6 +39,10 @@
         <%= render 'video', :product => @product %>
 
         <%= render :partial => "spree/shared/recently_viewed_products" %>
+        
+        <br />
+        
+        <%= link_to "Keep Shopping", products_path, :class => 'continue button' %>
       </div>
     </div>
   </div>
