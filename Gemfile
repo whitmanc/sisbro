@@ -48,7 +48,7 @@ gem 'spree_wishlist'               , :git     => 'git@github.com:whitmanc/spree_
 
 gem 'spree_minicart'               , :git     => 'git@github.com:whitmanc/spree_minicart.git'
 
-gem 'spree_product_sort'           , :git     => 'git@github.com:whitmanc/spree_product_sort.git'
+gem 'spree_product_sort'           , :git     => 'git://github.com/whitmanc/spree_product_sort.git'
 
 gem 'spree_related_products'       , :git     => 'git@github.com:spree/spree_related_products.git'
 
