@@ -50,7 +50,7 @@ gem 'spree_minicart'               , :git     => 'git@github.com:whitmanc/spree_
 
 gem 'spree_product_sort'           , :git     => 'git@github.com:whitmanc/spree_product_sort.git'
 
-gem 'spree_email_to_friend'        , :git     => 'git@github.com:whitmanc/spree_email_to_friend.git'
+gem 'spree_email_to_friend'        , :git     => 'git@github.com:whitmanc/spree_email_to_friend'
 
 gem 'spree_related_products'       , :git     => 'git@github.com:spree/spree_related_products.git'
 

@@ -99,7 +99,7 @@ GIT
       spree_core (>= 0.70.0)
 
 GIT
-  remote: git@github.com:whitmanc/spree_email_to_friend.git
+  remote: git@github.com:whitmanc/spree_email_to_friend
   revision: 77be9275b060c18fd5ca571181721a68b1082ff1
   specs:
     spree_email_to_friend (1.2)
