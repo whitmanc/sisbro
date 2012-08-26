@@ -13,6 +13,20 @@
 
 ActiveRecord::Schema.define(:version => 20120731060432) do
 
+  create_table "pages", :force => true do |t|
+    t.string   "title"
+    t.string   "nav_title"
+    t.string   "path"
+    t.string   "meta_title"
+    t.string   "meta_description"
+    t.string   "meta_keywords"
+    t.integer  "position",         :default => 999
+    t.boolean  "accessible",       :default => true
+    t.boolean  "visible",          :default => true
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+  end
+
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
     t.datetime "expires_at"
