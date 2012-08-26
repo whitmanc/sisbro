@@ -56,7 +56,7 @@ GIT
 
 GIT
   remote: git@github.com:railsdog/deface.git
-  revision: f22a7cc5e4d6708c26902446b124c22a0b56e57a
+  revision: a1214adb5650c643816224c9e9ad1ea94432a41e
   specs:
     deface (0.9.1)
       nokogiri (~> 1.5.0)
@@ -70,7 +70,7 @@ GIT
 
 GIT
   remote: git@github.com:spree/spree_gateway
-  revision: 9053cf7b4dbfd28c98a3b0a7ca5ff6121cab424a
+  revision: c53bd5b11d247ca32562085de1653ddcfa36d98e
   specs:
     spree_gateway (1.0.0)
       spree_core (~> 1.0)
@@ -85,7 +85,7 @@ GIT
 
 GIT
   remote: git@github.com:spree/spree_related_products.git
-  revision: 29476a688b306b752186e552d26dda62fc9f2d6c
+  revision: 4c7eeea58273ae59775c24ca21f9eb0719f2295c
   specs:
     spree_related_products (3.2)
       spree_core (~> 1.1.0)
