@@ -73,7 +73,7 @@
         </td>
         <td data-hook="order_item_description">
           <h4><%= item.variant.product.name %></h4>
-          <div style="max-height:100px">
+          <div style="max-height:100px; overflow: hidden;">
           <%= item.variant.product.description.html_safe %>
           </div>
           <%= "(" + variant_options(item.variant) + ")" unless item.variant .option_values.empty? %>
