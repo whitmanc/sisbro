@@ -249,7 +249,7 @@ ul#products li {
   margin-top: 20px;
   width: 178px;
   height: 260px;
-  float: left;
+  float: right;
 }
 .clr {
   clear:both;
