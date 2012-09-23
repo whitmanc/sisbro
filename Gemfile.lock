@@ -107,7 +107,7 @@ GIT
 
 GIT
   remote: git@github.com:whitmanc/spree_print_invoice.git
-  revision: f98f570d0886b048b9e06c1fc0675719dc7475bb
+  revision: 367b3b18a66ae2f84527a98398548bccdebbddd7
   specs:
     spree_print_invoice (1.0.0)
       prawn (= 0.8.4)
