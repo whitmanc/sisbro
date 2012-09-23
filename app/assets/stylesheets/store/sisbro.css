@@ -180,14 +180,13 @@ ul#products li {
 /* Related Products Image Scroller */
 .amazon_scroller{
   float: right;
-  width: 160px !important;
+  width: 260px !important;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
   -khtml-border-radius: 10px;
   position: relative;
-  right: -35px;
 }
 .amazon_scroller .amazon_scroller_nav, .amazon_scroller_cart .amazon_scroller_nav{
   position: absolute;
@@ -209,6 +208,7 @@ ul#products li {
   padding: 0px;
   margin: 0px;
   float: left;
+  width: 300px;
 }
 .amazon_scroller ul li, .amazon_scroller_cart ul li{
   padding: 0px;
@@ -246,10 +246,17 @@ ul#products li {
   padding-top:60px;
 }
 #related {
+  position: relative;
+  right: -35px;
   margin-top: 20px;
-  width: 178px;
+  width: 250px;
   height: 260px;
-  float: right;
+  float: left;
+}
+#related h6 {
+  width: 300px;  
+  position: relative;
+  right: 35px;
 }
 .clr {
   clear:both;
