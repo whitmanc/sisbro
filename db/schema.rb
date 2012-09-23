@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120826180434) do
+ActiveRecord::Schema.define(:version => 20120923075954) do
 
   create_table "pages", :force => true do |t|
     t.string   "title"
@@ -327,6 +327,7 @@ ActiveRecord::Schema.define(:version => 20120826180434) do
     t.string   "payment_state"
     t.string   "email"
     t.text     "special_instructions"
+    t.text     "user_comment"
   end
 
   add_index "spree_orders", ["number"], :name => "index_orders_on_number"

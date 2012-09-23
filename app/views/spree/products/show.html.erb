@@ -43,6 +43,10 @@
         <br />
         
         <%= link_to "Keep Shopping", products_path, :class => 'continue button' %>
+        
+        <br />
+        
+        <%= render 'related' %>
       </div>
     </div>
   </div>
@@ -62,9 +66,6 @@
         <div itemprop="description" data-hook="product_description">
           <%= product_description(@product) rescue t(:product_has_no_description) %>
         </div>
-
-
-        <%= render 'related' %>
         
       </div>
     </div>  

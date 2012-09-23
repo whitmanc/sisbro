@@ -19,7 +19,11 @@
         </li>
       <% end %>
     </ul>
-    <br style="clear:both;" />
+     <p id="minstrs" data-hook>
+        <%= form.label :user_comment, "Order Comments (optional)" %><br />
+        <%= form.text_area :user_comment, :cols => 40, :rows => 7 %>
+      </p>
+    <br />
     <div data-hook="coupon_code_field" data-hook></div>
   </div>
 </fieldset>

@@ -26,6 +26,7 @@ group :production do
   gem 'therubyracer'
 end
 
+gem 'formtastic', :branch => '2-0-stable'
 
 gem 'spree'                        , '1.1.2'
 
@@ -54,7 +55,7 @@ gem 'spree_related_products'       , :git     => 'git@github.com:spree/spree_rel
 
 gem 'spree_recently_viewed'        , :git     => 'git@github.com:whitmanc/spree_recently_viewed.git'
 
-gem 'spree_print_invoice'          , :git     => 'git@github.com:spree/spree_print_invoice.git'
+gem 'spree_print_invoice'          , :git     => 'git@github.com:whitmanc/spree_print_invoice.git'
 
 gem 'spree_dynamic_sitemaps'       , :git     => 'git@github.com:romul/spree_dynamic_sitemaps.git'
 
@@ -64,10 +65,10 @@ gem 'spree_gateway'                , :git     => 'git@github.com:spree/spree_gat
 
 gem 'spree_additional_calculators' , :git     => 'git@github.com:whitmanc/spree_sisbro_calculators'
 
-gem 'spree_snippets'               , :git     => 'git@github.com:fabien/spree-snippets.git',
-                                     :branch  => 'spree-1-1-x'
+gem 'spree_snippets'               , :git     => 'https://github.com/DynamoMTL/spree-snippets.git'
 
-gem 'simple_captcha'               , :git     => 'git://github.com/greendog/simple-captcha.git'
+gem 'galetahub-simple_captcha'     , :require => 'simple_captcha', 
+                                     :git => 'git://github.com/galetahub/simple-captcha.git'
 
 gem 'spree_editor'                 , :git     => 'git://raw.github.com/spree/spree_editor.git'
 
@@ -75,6 +76,7 @@ gem 'spree_contact_us'             , :git     => 'git://github.com/greendog/spre
 
 gem "recaptcha"                    , :require => 'recaptcha/rails'
 
-gem 'spree_product_zoom'           , :git     => 'git://github.com/spree/spree_product_zoom.git'
+gem 'spree_product_zoom'           , :git     => 'git@github.com:spree/spree_product_zoom.git',
+                                     :ref     => '2e93b4a5c2751d49c4babaf3aff4f09c538ac4be'
 
 gem 'deface'                       , :git     => 'git@github.com:railsdog/deface.git'

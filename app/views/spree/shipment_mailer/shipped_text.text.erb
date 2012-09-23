@@ -1,0 +1,15 @@
+Your order from Sisbro Studios has shipped.
+
+<%= t('shipment_mailer.shipped_email.instructions') %>
+
+============================================================
+<%= t('shipment_mailer.shipped_email.shipment_summary') %>
+============================================================
+<% @shipment.manifest.each do |item| %>
+  <%= item.variant.sku %> <%= item.variant.product.name %> <%= variant_options(item.variant, :include_style => false) %> (<%= item.quantity %>)
+<% end %>
+============================================================
+
+<%= t('shipment_mailer.shipped_email.track_information', :tracking => @shipment.tracking) if @shipment.tracking %>
+
+Thanks so much for your order. If you have questions, you may email us at info@sisbro.com
