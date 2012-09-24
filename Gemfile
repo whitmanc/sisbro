@@ -78,5 +78,9 @@ gem "recaptcha"                    , :require => 'recaptcha/rails'
 
 gem 'spree_product_zoom'           , :git     => 'git@github.com:spree/spree_product_zoom.git',
                                      :ref     => '2e93b4a5c2751d49c4babaf3aff4f09c538ac4be'
+                                     
+gem 'active_shipping'              , :git => "git://github.com/Shopify/active_shipping"
+
+gem 'spree_active_shipping'        , :git => "git://github.com/spree/spree_active_shipping"
 
 gem 'deface'                       , :git     => 'git@github.com:railsdog/deface.git'
