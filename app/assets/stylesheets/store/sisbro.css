@@ -453,3 +453,6 @@ nav #main-nav-bar li#link-to-cart a {
 #breadcrumbs {
     display: none;
 }
+nav #main-nav-bar {
+    margin-top: 1px !important;
+}

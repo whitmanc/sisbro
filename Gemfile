@@ -66,7 +66,8 @@ gem 'spree_gateway'                , :git     => 'git@github.com:spree/spree_gat
 
 gem 'spree_additional_calculators' , :git     => 'git@github.com:whitmanc/spree_sisbro_calculators'
 
-gem 'spree_snippets'               , :git     => 'https://github.com/whitmanc/spree-snippets.git'
+gem 'spree_snippets'               , :git     => 'https://github.com/whitmanc/spree-snippets.git',
+                                     :ref     => '11191dd199f17008260e8081e79010c9ae1e225a'
 
 gem 'galetahub-simple_captcha'     , :require => 'simple_captcha', 
                                      :git     => 'git://github.com/galetahub/simple-captcha.git'

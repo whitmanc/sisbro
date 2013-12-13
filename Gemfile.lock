@@ -165,7 +165,8 @@ GIT
 
 GIT
   remote: https://github.com/whitmanc/spree-snippets.git
-  revision: 46ae33a81fa328f8cafa33cf1957dfac6bfee9cb
+  revision: 11191dd199f17008260e8081e79010c9ae1e225a
+  ref: 11191dd199f17008260e8081e79010c9ae1e225a
   specs:
     spree_snippets (0.6.0)
       formtastic (>= 2.0.2)
