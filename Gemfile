@@ -30,7 +30,7 @@ gem 'formtastic', :branch => '2-0-stable'
 
 gem 'spree'                        , '1.1.2'
 
-gem 'tinymce-rails'                , '>= 3.4.7.0.1'
+gem 'tinymce-rails'                , "~> 3.5.8.3" 
 
 gem 'acts_as_tree'
 
@@ -41,7 +41,8 @@ gem 'spree_essential_menus'        , :git     => 'git@github.com:matfiz/spree_es
 gem 'haml'                         , :git     => 'https://github.com/haml/haml.git',
                                      :branch  => '3-2-stable'
 
-gem 'spree_videos'                 , :git     => 'git@github.com:iloveitaly/Spree-Videos.git'
+gem 'spree_videos'                 , :git     => 'git@github.com:iloveitaly/Spree-Videos.git',
+                                     :ref     => '42e6bf1e736bb096fcfc7c4e0f6cc4fe9452b835'
 
 gem 'spree_pinterest'              , :git     => 'git@github.com:whitmanc/spree_pinterest.git'
 
@@ -68,9 +69,10 @@ gem 'spree_additional_calculators' , :git     => 'git@github.com:whitmanc/spree_
 gem 'spree_snippets'               , :git     => 'https://github.com/whitmanc/spree-snippets.git'
 
 gem 'galetahub-simple_captcha'     , :require => 'simple_captcha', 
-                                     :git => 'git://github.com/galetahub/simple-captcha.git'
+                                     :git     => 'git://github.com/galetahub/simple-captcha.git'
 
-gem 'spree_editor'                 , :git     => 'git://raw.github.com/spree/spree_editor.git'
+gem 'spree_editor'                 , :git     => 'git://github.com/spree/spree_editor.git',
+                                     :ref     => '9846455f5b48615a328d334e37f619ba7a571ba4'
 
 gem 'spree_contact_us'             , :git     => 'git://github.com/greendog/spree_contact_us.git'
 
@@ -79,8 +81,9 @@ gem "recaptcha"                    , :require => 'recaptcha/rails'
 gem 'spree_product_zoom'           , :git     => 'git@github.com:spree/spree_product_zoom.git',
                                      :ref     => '2e93b4a5c2751d49c4babaf3aff4f09c538ac4be'
                                      
-gem 'active_shipping'              , :git => "git://github.com/Shopify/active_shipping"
+gem 'active_shipping'              , :git     => "git://github.com/Shopify/active_shipping"
 
-gem 'spree_active_shipping'        , :git => "git://github.com/spree/spree_active_shipping"
+gem 'spree_active_shipping'        , :git     => "git://github.com/spree/spree_active_shipping"
 
-gem 'deface'                       , :git     => 'git@github.com:railsdog/deface.git'
+gem 'deface'                       , :git     => 'git://github.com/spree/deface.git',
+                                     :ref     => '3728fddf56c02c13c4e56e59fbe913ebbb358471'
