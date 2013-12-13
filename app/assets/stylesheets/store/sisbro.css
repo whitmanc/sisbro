@@ -447,3 +447,9 @@ ul#products li {
     width: 210px !important;
     height: 219px !important;
 }
+nav #main-nav-bar li#link-to-cart a {
+    margin-top: 9px;
+}
+#breadcrumbs {
+    display: none;
+}
