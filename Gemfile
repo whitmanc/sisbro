@@ -41,8 +41,8 @@ gem 'spree_essential_menus'        , :git     => 'git@github.com:matfiz/spree_es
 gem 'haml'                         , :git     => 'https://github.com/haml/haml.git',
                                      :branch  => '3-2-stable'
 
-gem 'spree_videos'                 , :git     => 'git@github.com:iloveitaly/Spree-Videos.git',
-                                     :ref     => '42e6bf1e736bb096fcfc7c4e0f6cc4fe9452b835'
+gem 'spree_videos'                 , :git     => 'git@github.com:rho45dium/Spree-Videos.git',
+                                     :branch  => 'vidsibro-fix'
 
 gem 'spree_pinterest'              , :git     => 'git@github.com:whitmanc/spree_pinterest.git'
 

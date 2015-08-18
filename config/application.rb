@@ -74,3 +74,5 @@ module Sisbro
     config.assets.version = '1.0'
   end
 end
+
+Yt.configuration.api_key = 'AIzaSyAKLv4yT0i2Z4BCAA_2D_Wi9RbcoSxRDWY'
