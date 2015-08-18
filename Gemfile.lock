@@ -68,8 +68,8 @@ GIT
 
 GIT
   remote: git@github.com:rho45dium/Spree-Videos.git
-  revision: 70a79197e83dce246f36cd6f39442c1fff40dc4b
-  branch: vidsibro-fix
+  revision: 0d31587862903225a6cfbb9f23b720a30561dca1
+  branch: fix-yt
   specs:
     spree_videos (1.2.4)
       spree_core (~> 1.1.0)

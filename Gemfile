@@ -42,7 +42,7 @@ gem 'haml'                         , :git     => 'https://github.com/haml/haml.g
                                      :branch  => '3-2-stable'
 
 gem 'spree_videos'                 , :git     => 'git@github.com:rho45dium/Spree-Videos.git',
-                                     :branch  => 'vidsibro-fix'
+                                     :branch  => 'fix-yt'
 
 gem 'spree_pinterest'              , :git     => 'git@github.com:whitmanc/spree_pinterest.git'
 
