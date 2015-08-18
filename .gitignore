@@ -19,3 +19,4 @@ tags
 config/s3.yml
 .sass-cache
 public/assets/
+.ruby-version
